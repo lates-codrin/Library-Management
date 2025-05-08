@@ -154,5 +154,3 @@ Lates Codrin-Gabriel – latescodrin@gmail.com
 
 # 🏁 Final Thoughts
 This project demonstrates basic skills in **.NET development**, **WPF UI design**, the use of external libraries like **CommunityToolkit.Mvvm**, and a solid understanding of **multi-layered architecture** for clean separation of concerns and scalability.
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lates-codrin&hide=javascript,html)
