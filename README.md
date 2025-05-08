@@ -5,6 +5,7 @@
 
 ### [!] Notice
 - You may not commit to this project. If you find something bothering you, please open an issue first! 👍
+- You may run unit tests (made with xUnit) by using the built-in Visual Studio tests explorer.
 
 # 📚 Library Management System (.NET)
 <p align="center">
