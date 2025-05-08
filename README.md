@@ -71,6 +71,27 @@ Press F5 or click the green Start button.
 
 ---
 
+📘 Generate Documentation with DocFX
+Install DocFX (if not already installed)
+
+```bash
+choco install docfx -y
+```
+Or via their website if you don't have choco installed (make sure to restart so it's registered in env)
+
+```bash
+docfx build
+```
+
+or directly 
+```bash
+docfx serve
+```
+
+This will host the documentation locally, typically at http://localhost:8080.
+
+---
+
 💡 **Custom Feature Description: AI Book Recommender**
 This unique feature allows the administrator to input:
 
