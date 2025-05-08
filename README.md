@@ -6,6 +6,14 @@
 - You may not commit to this project. If you find something bothering you, please open an issue first! 👍
 
 # 📚 Library Management System (.NET)
+<p align="center">
+  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-alpha/Setup.pdf">
+    <img src="https://img.shields.io/badge/📄%20Download-Documentation%20PDF-green?style=for-the-badge" alt="Download Documentation PDF"/>
+  </a>
+  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-alpha/x64.zip">
+    <img src="https://img.shields.io/badge/📦%20Download-Pre--Release-orange?style=for-the-badge" alt="Download Pre-release"/>
+  </a>
+</p>
 
 
 A desktop-based Library Management System built in C# with a multi-layered architecture. This project is developed as part of the Internship 2025 and aims to provide a user-friendly way for library admins to manage book inventories, issue and return books, and receive book recommendations using AI.
@@ -14,6 +22,12 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 
 
 # 🚀 How to Run the Project
+
+## Prerequisites
+1. Install Visual Studio 2022 or newer.
+2. Install .NET SDK 8.0 or higher (or when installing Visual Studio, choose ".NET Desktop Development")
+   If you don't have the SDK installed, Visual Studio will automatically prompt you to install ".NET Desktop Development". Click Install.
+
 
 ## 🔹 Method 1: Using Visual Studio (Recommended)
 1. Clone the Repository
