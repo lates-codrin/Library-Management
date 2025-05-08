@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/cftZsqd.png" alt="Library Management System Mockup Image" style="max-width: 100%; height: auto;" />
+  <img src="https://i.imgur.com/w9A0rh2.png" alt="Library Management System Mockup Image" style="max-width: 100%; height: auto;" />
 </p>
 
 
