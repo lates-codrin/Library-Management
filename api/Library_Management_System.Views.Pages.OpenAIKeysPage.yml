@@ -19,7 +19,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Pages/OpenAIKeysPage.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OpenAIKeysPage
     path: Library Management System/obj/Release/net9.0-windows/Views/Pages/OpenAIKeysPage.g.cs
     startLine: 46
@@ -652,10 +652,10 @@ items:
     remote:
       path: Library Management System/Views/Pages/OpenAIKeysPage.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ViewModel
     path: Library Management System/Views/Pages/OpenAIKeysPage.xaml.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Library Management System
   namespace: Library_Management_System.Views.Pages
@@ -688,10 +688,10 @@ items:
     remote:
       path: Library Management System/Views/Pages/OpenAIKeysPage.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/Views/Pages/OpenAIKeysPage.xaml.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Library Management System
   namespace: Library_Management_System.Views.Pages
@@ -720,7 +720,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Pages/OpenAIKeysPage.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: InitializeComponent
     path: Library Management System/obj/Release/net9.0-windows/Views/Pages/OpenAIKeysPage.g.cs
     startLine: 61

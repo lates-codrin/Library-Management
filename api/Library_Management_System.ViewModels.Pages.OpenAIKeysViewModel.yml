@@ -18,7 +18,7 @@ items:
   type: Class
   source:
     id: OpenAIKeysViewModel
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.g.cs
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.Save.g.cs
     startLine: 6
   assemblies:
   - Library Management System
@@ -73,7 +73,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/OpenAIKeysViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/ViewModels/Pages/OpenAIKeysViewmodel.cs
     startLine: 11
@@ -114,6 +114,32 @@ items:
       type: CommunityToolkit.Mvvm.Input.IRelayCommand
     content.vb: Public ReadOnly Property DeleteCommand As IRelayCommand
   overload: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.DeleteCommand*
+- uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
+  commentId: P:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
+  id: OpenAIKey
+  parent: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+  langs:
+  - csharp
+  - vb
+  name: OpenAIKey
+  nameWithType: OpenAIKeysViewModel.OpenAIKey
+  fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
+  type: Property
+  source:
+    id: OpenAIKey
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.g.cs
+    startLine: 9
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  example: []
+  syntax:
+    content: public string OpenAIKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OpenAIKey As String
+  overload: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey*
 - uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.SaveCommand
   commentId: P:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.SaveCommand
   id: SaveCommand
@@ -141,32 +167,6 @@ items:
       type: CommunityToolkit.Mvvm.Input.IRelayCommand
     content.vb: Public ReadOnly Property SaveCommand As IRelayCommand
   overload: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.SaveCommand*
-- uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
-  commentId: P:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
-  id: OpenAIKey
-  parent: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
-  langs:
-  - csharp
-  - vb
-  name: OpenAIKey
-  nameWithType: OpenAIKeysViewModel.OpenAIKey
-  fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
-  type: Property
-  source:
-    id: OpenAIKey
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.g.cs
-    startLine: 9
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  example: []
-  syntax:
-    content: public string OpenAIKey { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property OpenAIKey As String
-  overload: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey*
 references:
 - uid: Library_Management_System.ViewModels.Pages
   commentId: N:Library_Management_System.ViewModels.Pages
@@ -2272,6 +2272,23 @@ references:
     name: Input
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
+- uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
+  href: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.html#Library_Management_System_ViewModels_Pages_OpenAIKeysViewModel_OpenAIKey
+  name: OpenAIKey
+  nameWithType: OpenAIKeysViewModel.OpenAIKey
+  fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.Save
   commentId: M:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.Save
   name: Save()
@@ -2293,20 +2310,3 @@ references:
   name: SaveCommand
   nameWithType: OpenAIKeysViewModel.SaveCommand
   fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.SaveCommand
-- uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
-  href: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.html#Library_Management_System_ViewModels_Pages_OpenAIKeysViewModel_OpenAIKey
-  name: OpenAIKey
-  nameWithType: OpenAIKeysViewModel.OpenAIKey
-  fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.OpenAIKey
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String

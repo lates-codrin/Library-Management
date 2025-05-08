@@ -22,7 +22,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: BookRepository
     path: Library Management System/Data/BookRepository.cs
     startLine: 9
@@ -59,7 +59,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/Data/BookRepository.cs
     startLine: 14
@@ -91,7 +91,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetAll
     path: Library Management System/Data/BookRepository.cs
     startLine: 20
@@ -122,7 +122,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Add
     path: Library Management System/Data/BookRepository.cs
     startLine: 22
@@ -154,7 +154,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Update
     path: Library Management System/Data/BookRepository.cs
     startLine: 28
@@ -186,7 +186,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Delete
     path: Library Management System/Data/BookRepository.cs
     startLine: 38
@@ -218,7 +218,7 @@ items:
     remote:
       path: Library Management System/Data/BookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetAllBooks
     path: Library Management System/Data/BookRepository.cs
     startLine: 67

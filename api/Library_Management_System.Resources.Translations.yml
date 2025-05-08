@@ -16,7 +16,7 @@ items:
     remote:
       path: Library Management System/Resources/Translations.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Translations
     path: Library Management System/Resources/Translations.cs
     startLine: 2

@@ -17,7 +17,7 @@ items:
     remote:
       path: Library Management System/Models/DataColor.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: DataColor
     path: Library Management System/Models/DataColor.cs
     startLine: 4
@@ -49,7 +49,7 @@ items:
     remote:
       path: Library Management System/Models/DataColor.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Color
     path: Library Management System/Models/DataColor.cs
     startLine: 6

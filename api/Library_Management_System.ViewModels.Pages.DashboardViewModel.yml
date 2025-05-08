@@ -78,7 +78,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/DashboardViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/ViewModels/Pages/DashboardViewModel.cs
     startLine: 16
@@ -112,13 +112,18 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/DashboardViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: LoadData
     path: Library Management System/ViewModels/Pages/DashboardViewModel.cs
-    startLine: 34
+    startLine: 41
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
+  summary: >-
+    Loads book lending and inventory data, calculates counts and chart values, and updates the UI.
+
+    Used during initialization and refresh operations.
+  example: []
   syntax:
     content: public void LoadData()
     content.vb: Public Sub LoadData()

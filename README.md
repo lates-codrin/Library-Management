@@ -50,14 +50,14 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 ### Prerequisites
 
 - Visual Studio 2022+
-- .NET 6.0 SDK or later
+- .NET 8.0 SDK or later
 
 
 ### Steps
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/lates-codrin/library-management-system.git
+   git clone https://github.com/lates-codrin/library-management.git
    ```
 
 1. **Open the Solution in Visual Studio**
@@ -68,6 +68,28 @@ Press Ctrl+Shift+B or use the Build menu.
 
 3. **Run the Application**
 Press F5 or click the green Start button.
+
+Or simply download the project and run the .sln file.
+---
+
+📘 Generate Documentation with DocFX
+Install DocFX (if not already installed)
+
+```bash
+choco install docfx -y
+```
+Or via their website if you don't have choco installed (make sure to restart so it's registered in env)
+
+```bash
+docfx build
+```
+
+or directly 
+```bash
+docfx serve
+```
+
+This will host the documentation locally, typically at http://localhost:8080.
 
 ---
 

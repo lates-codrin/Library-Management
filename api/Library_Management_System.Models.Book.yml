@@ -23,7 +23,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Book
     path: Library Management System/Models/Book.cs
     startLine: 4
@@ -58,7 +58,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Id
     path: Library Management System/Models/Book.cs
     startLine: 6
@@ -87,7 +87,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Title
     path: Library Management System/Models/Book.cs
     startLine: 7
@@ -116,7 +116,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Author
     path: Library Management System/Models/Book.cs
     startLine: 8
@@ -145,7 +145,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Quantity
     path: Library Management System/Models/Book.cs
     startLine: 9
@@ -174,7 +174,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Published
     path: Library Management System/Models/Book.cs
     startLine: 10
@@ -203,7 +203,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Status
     path: Library Management System/Models/Book.cs
     startLine: 11
@@ -232,7 +232,7 @@ items:
     remote:
       path: Library Management System/Models/Book.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ImagePath
     path: Library Management System/Models/Book.cs
     startLine: 12

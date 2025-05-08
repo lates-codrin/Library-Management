@@ -19,7 +19,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/App.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: App
     path: Library Management System/obj/Release/net9.0-windows/App.g.cs
     startLine: 43
@@ -108,7 +108,7 @@ items:
     remote:
       path: Library Management System/App.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Services
     path: Library Management System/App.xaml.cs
     startLine: 73
@@ -139,7 +139,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/App.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: InitializeComponent
     path: Library Management System/obj/Release/net9.0-windows/App.g.cs
     startLine: 50
@@ -167,7 +167,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/App.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Main
     path: Library Management System/obj/Release/net9.0-windows/App.g.cs
     startLine: 87

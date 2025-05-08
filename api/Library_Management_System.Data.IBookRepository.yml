@@ -21,7 +21,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: IBookRepository
     path: Library Management System/Data/IBookRepository.cs
     startLine: 9
@@ -46,7 +46,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetAll
     path: Library Management System/Data/IBookRepository.cs
     startLine: 11
@@ -74,7 +74,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetAllBooks
     path: Library Management System/Data/IBookRepository.cs
     startLine: 12
@@ -102,7 +102,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Add
     path: Library Management System/Data/IBookRepository.cs
     startLine: 13
@@ -131,7 +131,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Update
     path: Library Management System/Data/IBookRepository.cs
     startLine: 14
@@ -160,7 +160,7 @@ items:
     remote:
       path: Library Management System/Data/IBookRepository.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Delete
     path: Library Management System/Data/IBookRepository.cs
     startLine: 15

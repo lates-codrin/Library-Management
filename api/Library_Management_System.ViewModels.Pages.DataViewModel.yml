@@ -73,10 +73,10 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/DataViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnNavigatedToAsync
     path: Library Management System/ViewModels/Pages/DataViewModel.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
@@ -106,10 +106,10 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/DataViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnNavigatedFromAsync
     path: Library Management System/ViewModels/Pages/DataViewModel.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages

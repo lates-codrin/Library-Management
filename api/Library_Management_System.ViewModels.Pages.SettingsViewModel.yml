@@ -19,7 +19,7 @@ items:
   type: Class
   source:
     id: SettingsViewModel
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.SettingsViewModel.OnChangeTheme.g.cs
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Library_Management_System.ViewModels.Pages.SettingsViewModel.g.cs
     startLine: 6
   assemblies:
   - Library Management System
@@ -75,7 +75,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/SettingsViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnNavigatedToAsync
     path: Library Management System/ViewModels/Pages/SettingsViewModel.cs
     startLine: 15
@@ -108,7 +108,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/SettingsViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnNavigatedFromAsync
     path: Library Management System/ViewModels/Pages/SettingsViewModel.cs
     startLine: 23
@@ -126,6 +126,33 @@ items:
   overload: Library_Management_System.ViewModels.Pages.SettingsViewModel.OnNavigatedFromAsync*
   implements:
   - Wpf.Ui.Abstractions.Controls.INavigationAware.OnNavigatedFromAsync
+- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
+  id: ChangeThemeCommand
+  parent: Library_Management_System.ViewModels.Pages.SettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeThemeCommand
+  nameWithType: SettingsViewModel.ChangeThemeCommand
+  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
+  type: Property
+  source:
+    id: ChangeThemeCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.SettingsViewModel.OnChangeTheme.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand%601" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.SettingsViewModel.OnChangeTheme(System.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand<string> ChangeThemeCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand{System.String}
+    content.vb: Public ReadOnly Property ChangeThemeCommand As IRelayCommand(Of String)
+  overload: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand*
 - uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
   commentId: P:Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
   id: AppVersion
@@ -178,33 +205,6 @@ items:
       type: Wpf.Ui.Appearance.ApplicationTheme
     content.vb: Public Property CurrentTheme As ApplicationTheme
   overload: Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme*
-- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
-  id: ChangeThemeCommand
-  parent: Library_Management_System.ViewModels.Pages.SettingsViewModel
-  langs:
-  - csharp
-  - vb
-  name: ChangeThemeCommand
-  nameWithType: SettingsViewModel.ChangeThemeCommand
-  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand
-  type: Property
-  source:
-    id: ChangeThemeCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.SettingsViewModel.OnChangeTheme.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand%601" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.SettingsViewModel.OnChangeTheme(System.String)" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand<string> ChangeThemeCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand{System.String}
-    content.vb: Public ReadOnly Property ChangeThemeCommand As IRelayCommand(Of String)
-  overload: Library_Management_System.ViewModels.Pages.SettingsViewModel.ChangeThemeCommand*
 references:
 - uid: Library_Management_System.ViewModels.Pages
   commentId: N:Library_Management_System.ViewModels.Pages
@@ -2382,67 +2382,6 @@ references:
     href: https://github.com/lepoco/wpfui/blob/7add0c086f9e8ff22a3a0e7c71389724ec518c92/src/Wpf.Ui.Abstractions/Controls/INavigationAware.cs
   - name: (
   - name: )
-- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
-  href: Library_Management_System.ViewModels.Pages.SettingsViewModel.html#Library_Management_System_ViewModels_Pages_SettingsViewModel_AppVersion
-  name: AppVersion
-  nameWithType: SettingsViewModel.AppVersion
-  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme
-  href: Library_Management_System.ViewModels.Pages.SettingsViewModel.html#Library_Management_System_ViewModels_Pages_SettingsViewModel_CurrentTheme
-  name: CurrentTheme
-  nameWithType: SettingsViewModel.CurrentTheme
-  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme
-- uid: Wpf.Ui.Appearance.ApplicationTheme
-  commentId: T:Wpf.Ui.Appearance.ApplicationTheme
-  parent: Wpf.Ui.Appearance
-  isExternal: true
-  href: https://github.com/lepoco/wpfui/blob/7add0c086f9e8ff22a3a0e7c71389724ec518c92/src/Wpf.Ui/Appearance/ApplicationTheme.cs
-  name: ApplicationTheme
-  nameWithType: ApplicationTheme
-  fullName: Wpf.Ui.Appearance.ApplicationTheme
-- uid: Wpf.Ui.Appearance
-  commentId: N:Wpf.Ui.Appearance
-  isExternal: true
-  name: Wpf.Ui.Appearance
-  nameWithType: Wpf.Ui.Appearance
-  fullName: Wpf.Ui.Appearance
-  spec.csharp:
-  - uid: Wpf
-    name: Wpf
-    isExternal: true
-  - name: .
-  - uid: Wpf.Ui
-    name: Ui
-    isExternal: true
-  - name: .
-  - uid: Wpf.Ui.Appearance
-    name: Appearance
-    isExternal: true
-  spec.vb:
-  - uid: Wpf
-    name: Wpf
-    isExternal: true
-  - name: .
-  - uid: Wpf.Ui
-    name: Ui
-    isExternal: true
-  - name: .
-  - uid: Wpf.Ui.Appearance
-    name: Appearance
-    isExternal: true
 - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
   commentId: T:CommunityToolkit.Mvvm.Input.IRelayCommand`1
   isExternal: true
@@ -2577,3 +2516,64 @@ references:
     name: Input
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
+- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
+  href: Library_Management_System.ViewModels.Pages.SettingsViewModel.html#Library_Management_System_ViewModels_Pages_SettingsViewModel_AppVersion
+  name: AppVersion
+  nameWithType: SettingsViewModel.AppVersion
+  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.AppVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme
+  href: Library_Management_System.ViewModels.Pages.SettingsViewModel.html#Library_Management_System_ViewModels_Pages_SettingsViewModel_CurrentTheme
+  name: CurrentTheme
+  nameWithType: SettingsViewModel.CurrentTheme
+  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel.CurrentTheme
+- uid: Wpf.Ui.Appearance.ApplicationTheme
+  commentId: T:Wpf.Ui.Appearance.ApplicationTheme
+  parent: Wpf.Ui.Appearance
+  isExternal: true
+  href: https://github.com/lepoco/wpfui/blob/7add0c086f9e8ff22a3a0e7c71389724ec518c92/src/Wpf.Ui/Appearance/ApplicationTheme.cs
+  name: ApplicationTheme
+  nameWithType: ApplicationTheme
+  fullName: Wpf.Ui.Appearance.ApplicationTheme
+- uid: Wpf.Ui.Appearance
+  commentId: N:Wpf.Ui.Appearance
+  isExternal: true
+  name: Wpf.Ui.Appearance
+  nameWithType: Wpf.Ui.Appearance
+  fullName: Wpf.Ui.Appearance
+  spec.csharp:
+  - uid: Wpf
+    name: Wpf
+    isExternal: true
+  - name: .
+  - uid: Wpf.Ui
+    name: Ui
+    isExternal: true
+  - name: .
+  - uid: Wpf.Ui.Appearance
+    name: Appearance
+    isExternal: true
+  spec.vb:
+  - uid: Wpf
+    name: Wpf
+    isExternal: true
+  - name: .
+  - uid: Wpf.Ui
+    name: Ui
+    isExternal: true
+  - name: .
+  - uid: Wpf.Ui.Appearance
+    name: Appearance
+    isExternal: true

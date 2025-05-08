@@ -44,29 +44,14 @@ namespace Library_Management_System.ViewModels.Pages
             var lendings = _lendManager.GetLendBooks();
             var inventory = _bookManager.GetBooks();
 
-            // anti null collections
-            lendings = lendings ?? new List<LendBook>();
-            inventory = inventory ?? new List<Book>();
+            // load some empty stuff
 
-            if (lendings == null || !lendings.Any())
-            {
-                lendings = new List<LendBook>
-                {
-                    new() { Status = "Issued" },
-                    new() { Status = "Returned" },
-                    new() { Status = "Issued" },
-                    new() { Status = "Returned" }
-                };
-            }
+            if (lendings == null)
+                lendings = new List<LendBook>();
 
-            if (inventory == null || !inventory.Any())
-            {
-                inventory = new List<Book>
-                {
-                    new() { Quantity = 5 },
-                    new() { Quantity = 4 }
-                };
-            }
+            if (inventory == null)
+                inventory = new List<Book>();
+
 
             BooksLentCount = lendings.Count(b => b.Status == "Issued");
             BooksReturnedCount = lendings.Count(b => b.Status == "Returned");

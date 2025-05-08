@@ -31,7 +31,7 @@ items:
   type: Class
   source:
     id: LendBooksViewModel
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.g.cs
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update.g.cs
     startLine: 6
   assemblies:
   - Library Management System
@@ -86,7 +86,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
     startLine: 18
@@ -120,7 +120,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: LendBooks
     path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
     startLine: 26
@@ -149,7 +149,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: StatusOptions
     path: Library Management System/ViewModels/Pages/LendBooksViewmodel.cs
     startLine: 42
@@ -163,114 +163,6 @@ items:
       type: System.Collections.ObjectModel.ObservableCollection{System.String}
     content.vb: Public ReadOnly Property StatusOptions As ObservableCollection(Of String)
   overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.StatusOptions*
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
-  id: AddCommand
-  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: AddCommand
-  nameWithType: LendBooksViewModel.AddCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
-  type: Property
-  source:
-    id: AddCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand AddCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property AddCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand*
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
-  id: UpdateCommand
-  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: UpdateCommand
-  nameWithType: LendBooksViewModel.UpdateCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
-  type: Property
-  source:
-    id: UpdateCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand UpdateCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property UpdateCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand*
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
-  id: ClearFormCommand
-  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: ClearFormCommand
-  nameWithType: LendBooksViewModel.ClearFormCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
-  type: Property
-  source:
-    id: ClearFormCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand ClearFormCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property ClearFormCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand*
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
-  id: DeleteCommand
-  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: DeleteCommand
-  nameWithType: LendBooksViewModel.DeleteCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
-  type: Property
-  source:
-    id: DeleteCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand DeleteCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property DeleteCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand*
 - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.SelectedLendBook
   commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.SelectedLendBook
   id: SelectedLendBook
@@ -531,6 +423,114 @@ items:
       type: System.String
     content.vb: Public Property FormMessage As String
   overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.FormMessage*
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
+  id: ClearFormCommand
+  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: ClearFormCommand
+  nameWithType: LendBooksViewModel.ClearFormCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
+  type: Property
+  source:
+    id: ClearFormCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand ClearFormCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand
+    content.vb: Public ReadOnly Property ClearFormCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand*
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
+  id: DeleteCommand
+  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: DeleteCommand
+  nameWithType: LendBooksViewModel.DeleteCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
+  type: Property
+  source:
+    id: DeleteCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand DeleteCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand
+    content.vb: Public ReadOnly Property DeleteCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand*
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
+  id: AddCommand
+  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: AddCommand
+  nameWithType: LendBooksViewModel.AddCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
+  type: Property
+  source:
+    id: AddCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand AddCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand
+    content.vb: Public ReadOnly Property AddCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand*
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
+  id: UpdateCommand
+  parent: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: UpdateCommand
+  nameWithType: LendBooksViewModel.UpdateCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
+  type: Property
+  source:
+    id: UpdateCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand UpdateCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand
+    content.vb: Public ReadOnly Property UpdateCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand*
 references:
 - uid: Library_Management_System.ViewModels.Pages
   commentId: N:Library_Management_System.ViewModels.Pages
@@ -2751,135 +2751,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: CommunityToolkit.Mvvm.Input.IRelayCommand
-  commentId: T:CommunityToolkit.Mvvm.Input.IRelayCommand
-  parent: CommunityToolkit.Mvvm.Input
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input.irelaycommand
-  name: IRelayCommand
-  nameWithType: IRelayCommand
-  fullName: CommunityToolkit.Mvvm.Input.IRelayCommand
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
-  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
-  name: Add()
-  nameWithType: LendBooksViewModel.Add()
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
-    name: Add
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
-    name: Add
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
-  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_AddCommand
-  name: AddCommand
-  nameWithType: LendBooksViewModel.AddCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
-- uid: CommunityToolkit.Mvvm.Input
-  commentId: N:CommunityToolkit.Mvvm.Input
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  name: CommunityToolkit.Mvvm.Input
-  nameWithType: CommunityToolkit.Mvvm.Input
-  fullName: CommunityToolkit.Mvvm.Input
-  spec.csharp:
-  - uid: CommunityToolkit
-    name: CommunityToolkit
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  - name: .
-  - uid: CommunityToolkit.Mvvm
-    name: Mvvm
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
-  - name: .
-  - uid: CommunityToolkit.Mvvm.Input
-    name: Input
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
-  spec.vb:
-  - uid: CommunityToolkit
-    name: CommunityToolkit
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  - name: .
-  - uid: CommunityToolkit.Mvvm
-    name: Mvvm
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
-  - name: .
-  - uid: CommunityToolkit.Mvvm.Input
-    name: Input
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
-  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
-  name: Update()
-  nameWithType: LendBooksViewModel.Update()
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
-    name: Update
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
-    name: Update
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
-  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_UpdateCommand
-  name: UpdateCommand
-  nameWithType: LendBooksViewModel.UpdateCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
-  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
-  name: ClearForm()
-  nameWithType: LendBooksViewModel.ClearForm()
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
-    name: ClearForm
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
-    name: ClearForm
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
-  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_ClearFormCommand
-  name: ClearFormCommand
-  nameWithType: LendBooksViewModel.ClearFormCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
-  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
-  name: Delete()
-  nameWithType: LendBooksViewModel.Delete()
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
-    name: Delete
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
-    name: Delete
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
-  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_DeleteCommand
-  name: DeleteCommand
-  nameWithType: LendBooksViewModel.DeleteCommand
-  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
 - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.SelectedLendBook*
   commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.SelectedLendBook
   href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_SelectedLendBook
@@ -2991,3 +2862,132 @@ references:
   name: FormMessage
   nameWithType: LendBooksViewModel.FormMessage
   fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.FormMessage
+- uid: CommunityToolkit.Mvvm.Input.IRelayCommand
+  commentId: T:CommunityToolkit.Mvvm.Input.IRelayCommand
+  parent: CommunityToolkit.Mvvm.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input.irelaycommand
+  name: IRelayCommand
+  nameWithType: IRelayCommand
+  fullName: CommunityToolkit.Mvvm.Input.IRelayCommand
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
+  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
+  name: ClearForm()
+  nameWithType: LendBooksViewModel.ClearForm()
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
+    name: ClearForm
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearForm
+    name: ClearForm
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
+  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_ClearFormCommand
+  name: ClearFormCommand
+  nameWithType: LendBooksViewModel.ClearFormCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.ClearFormCommand
+- uid: CommunityToolkit.Mvvm.Input
+  commentId: N:CommunityToolkit.Mvvm.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  name: CommunityToolkit.Mvvm.Input
+  nameWithType: CommunityToolkit.Mvvm.Input
+  fullName: CommunityToolkit.Mvvm.Input
+  spec.csharp:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
+  spec.vb:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
+  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
+  name: Delete()
+  nameWithType: LendBooksViewModel.Delete()
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
+    name: Delete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Delete
+    name: Delete
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
+  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_DeleteCommand
+  name: DeleteCommand
+  nameWithType: LendBooksViewModel.DeleteCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.DeleteCommand
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
+  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
+  name: Add()
+  nameWithType: LendBooksViewModel.Add()
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
+    name: Add
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Add
+    name: Add
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
+  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_AddCommand
+  name: AddCommand
+  nameWithType: LendBooksViewModel.AddCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.AddCommand
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
+  commentId: M:Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
+  name: Update()
+  nameWithType: LendBooksViewModel.Update()
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand
+  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html#Library_Management_System_ViewModels_Pages_LendBooksViewModel_UpdateCommand
+  name: UpdateCommand
+  nameWithType: LendBooksViewModel.UpdateCommand
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel.UpdateCommand

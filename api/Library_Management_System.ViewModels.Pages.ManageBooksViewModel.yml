@@ -85,7 +85,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
     startLine: 16
@@ -119,7 +119,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Books
     path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
     startLine: 27
@@ -148,7 +148,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: StatusOptions
     path: Library Management System/ViewModels/Pages/ManageBooksViewmodel.cs
     startLine: 46
@@ -344,33 +344,33 @@ items:
       type: System.String
     content.vb: Public Property FormImagePath As String
   overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.FormImagePath*
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
-  id: UpdateCommand
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
+  id: ClearFormCommand
   parent: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
   langs:
   - csharp
   - vb
-  name: UpdateCommand
-  nameWithType: ManageBooksViewModel.UpdateCommand
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+  name: ClearFormCommand
+  nameWithType: ManageBooksViewModel.ClearFormCommand
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
   type: Property
   source:
-    id: UpdateCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update.g.cs
+    id: ClearFormCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm.g.cs
     startLine: 12
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update" data-throw-if-not-resolved="false"></xref>.
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public IRelayCommand UpdateCommand { get; }
+    content: public IRelayCommand ClearFormCommand { get; }
     parameters: []
     return:
       type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property UpdateCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand*
+    content.vb: Public ReadOnly Property ClearFormCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand*
 - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.SearchCommand
   commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.SearchCommand
   id: SearchCommand
@@ -425,6 +425,33 @@ items:
       type: CommunityToolkit.Mvvm.Input.IRelayCommand
     content.vb: Public ReadOnly Property DeleteCommand As IRelayCommand
   overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.DeleteCommand*
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+  id: UpdateCommand
+  parent: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: UpdateCommand
+  nameWithType: ManageBooksViewModel.UpdateCommand
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+  type: Property
+  source:
+    id: UpdateCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand UpdateCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand
+    content.vb: Public ReadOnly Property UpdateCommand As IRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand*
 - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.AddCommand
   commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.AddCommand
   id: AddCommand
@@ -452,33 +479,6 @@ items:
       type: CommunityToolkit.Mvvm.Input.IRelayCommand
     content.vb: Public ReadOnly Property AddCommand As IRelayCommand
   overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.AddCommand*
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
-  id: ClearFormCommand
-  parent: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: ClearFormCommand
-  nameWithType: ManageBooksViewModel.ClearFormCommand
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
-  type: Property
-  source:
-    id: ClearFormCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IRelayCommand ClearFormCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IRelayCommand
-    content.vb: Public ReadOnly Property ClearFormCommand As IRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand*
 - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ImportImageCommand
   commentId: P:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ImportImageCommand
   id: ImportImageCommand
@@ -2838,27 +2838,27 @@ references:
   name: IRelayCommand
   nameWithType: IRelayCommand
   fullName: CommunityToolkit.Mvvm.Input.IRelayCommand
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
-  commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
-  name: Update()
-  nameWithType: ManageBooksViewModel.Update()
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update()
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
+  commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
+  name: ClearForm()
+  nameWithType: ManageBooksViewModel.ClearForm()
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm()
   spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
-    name: Update
+  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
+    name: ClearForm
   - name: (
   - name: )
   spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
-    name: Update
+  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
+    name: ClearForm
   - name: (
   - name: )
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
-  href: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html#Library_Management_System_ViewModels_Pages_ManageBooksViewModel_UpdateCommand
-  name: UpdateCommand
-  nameWithType: ManageBooksViewModel.UpdateCommand
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
+  href: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html#Library_Management_System_ViewModels_Pages_ManageBooksViewModel_ClearFormCommand
+  name: ClearFormCommand
+  nameWithType: ManageBooksViewModel.ClearFormCommand
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
 - uid: CommunityToolkit.Mvvm.Input
   commentId: N:CommunityToolkit.Mvvm.Input
   isExternal: true
@@ -3014,6 +3014,27 @@ references:
   name: DeleteCommand
   nameWithType: ManageBooksViewModel.DeleteCommand
   fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.DeleteCommand
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
+  commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
+  name: Update()
+  nameWithType: ManageBooksViewModel.Update()
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
+  href: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html#Library_Management_System_ViewModels_Pages_ManageBooksViewModel_UpdateCommand
+  name: UpdateCommand
+  nameWithType: ManageBooksViewModel.UpdateCommand
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.UpdateCommand
 - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Add
   commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.Add
   name: Add()
@@ -3035,27 +3056,6 @@ references:
   name: AddCommand
   nameWithType: ManageBooksViewModel.AddCommand
   fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.AddCommand
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
-  commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
-  name: ClearForm()
-  nameWithType: ManageBooksViewModel.ClearForm()
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
-    name: ClearForm
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearForm
-    name: ClearForm
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
-  href: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html#Library_Management_System_ViewModels_Pages_ManageBooksViewModel_ClearFormCommand
-  name: ClearFormCommand
-  nameWithType: ManageBooksViewModel.ClearFormCommand
-  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ClearFormCommand
 - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ImportImage
   commentId: M:Library_Management_System.ViewModels.Pages.ManageBooksViewModel.ImportImage
   name: ImportImage()

@@ -19,7 +19,7 @@ items:
     remote:
       path: Library Management System/Services/ApplicationHostService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ApplicationHostService
     path: Library Management System/Services/ApplicationHostService.cs
     startLine: 11
@@ -58,7 +58,7 @@ items:
     remote:
       path: Library Management System/Services/ApplicationHostService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/Services/ApplicationHostService.cs
     startLine: 17
@@ -90,7 +90,7 @@ items:
     remote:
       path: Library Management System/Services/ApplicationHostService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: StartAsync
     path: Library Management System/Services/ApplicationHostService.cs
     startLine: 26
@@ -126,7 +126,7 @@ items:
     remote:
       path: Library Management System/Services/ApplicationHostService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: StopAsync
     path: Library Management System/Services/ApplicationHostService.cs
     startLine: 35

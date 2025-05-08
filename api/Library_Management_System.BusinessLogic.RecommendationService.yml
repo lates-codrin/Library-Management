@@ -19,7 +19,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/RecommendationService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: RecommendationService
     path: Library Management System/BusinessLogic/RecommendationService.cs
     startLine: 9
@@ -54,7 +54,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/RecommendationService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: IsApiKeyMissing
     path: Library Management System/BusinessLogic/RecommendationService.cs
     startLine: 16
@@ -85,7 +85,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/RecommendationService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/BusinessLogic/RecommendationService.cs
     startLine: 21
@@ -116,7 +116,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/RecommendationService.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetRecommendationsAsync
     path: Library Management System/BusinessLogic/RecommendationService.cs
     startLine: 41

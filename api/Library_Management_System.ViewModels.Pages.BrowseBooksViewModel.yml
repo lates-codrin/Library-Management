@@ -22,7 +22,7 @@ items:
   type: Class
   source:
     id: BrowseBooksViewModel
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks.g.cs
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.Search.g.cs
     startLine: 6
   assemblies:
   - Library Management System
@@ -77,7 +77,7 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
     startLine: 17
@@ -111,13 +111,18 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ReloadBooks
     path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
+  summary: >-
+    Reloads the list of books by clearing the current collection and fetching the latest data from the library manager.
+
+    Typically used when book statuses are updated.
+  example: []
   syntax:
     content: >-
       [RelayCommand]
@@ -147,13 +152,15 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: AddBook
     path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
+  summary: Adds a new book to the library using the library manager and updates the local book collection.
+  example: []
   syntax:
     content: public void AddBook(Book newBook)
     parameters:
@@ -176,10 +183,10 @@ items:
     remote:
       path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Books
     path: Library Management System/ViewModels/Pages/BrowseBooksViewModel.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - Library Management System
   namespace: Library_Management_System.ViewModels.Pages
@@ -190,6 +197,33 @@ items:
       type: System.Collections.ObjectModel.ObservableCollection{Library_Management_System.Models.Book}
     content.vb: Public ReadOnly Property Books As ObservableCollection(Of Book)
   overload: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.Books*
+- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
+  commentId: P:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
+  id: LoadMoreBooksCommand
+  parent: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadMoreBooksCommand
+  nameWithType: BrowseBooksViewModel.LoadMoreBooksCommand
+  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
+  type: Property
+  source:
+    id: LoadMoreBooksCommand
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks.g.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.ViewModels.Pages
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IAsyncRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IAsyncRelayCommand LoadMoreBooksCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
+    content.vb: Public ReadOnly Property LoadMoreBooksCommand As IAsyncRelayCommand
+  overload: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand*
 - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchQuery
   commentId: P:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchQuery
   id: SearchQuery
@@ -270,33 +304,6 @@ items:
       type: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
     content.vb: Public ReadOnly Property SearchCommand As IAsyncRelayCommand
   overload: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchCommand*
-- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
-  commentId: P:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
-  id: LoadMoreBooksCommand
-  parent: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
-  langs:
-  - csharp
-  - vb
-  name: LoadMoreBooksCommand
-  nameWithType: BrowseBooksViewModel.LoadMoreBooksCommand
-  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
-  type: Property
-  source:
-    id: LoadMoreBooksCommand
-    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator\Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks.g.cs
-    startLine: 12
-  assemblies:
-  - Library Management System
-  namespace: Library_Management_System.ViewModels.Pages
-  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IAsyncRelayCommand" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public IAsyncRelayCommand LoadMoreBooksCommand { get; }
-    parameters: []
-    return:
-      type: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
-    content.vb: Public ReadOnly Property LoadMoreBooksCommand As IAsyncRelayCommand
-  overload: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand*
 references:
 - uid: Library_Management_System.ViewModels.Pages
   commentId: N:Library_Management_System.ViewModels.Pages
@@ -2517,6 +2524,72 @@ references:
     name: ObjectModel
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
+  commentId: T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
+  parent: CommunityToolkit.Mvvm.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input.iasyncrelaycommand
+  name: IAsyncRelayCommand
+  nameWithType: IAsyncRelayCommand
+  fullName: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
+- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
+  commentId: M:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
+  name: LoadMoreBooks()
+  nameWithType: BrowseBooksViewModel.LoadMoreBooks()
+  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks()
+  spec.csharp:
+  - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
+    name: LoadMoreBooks
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
+    name: LoadMoreBooks
+  - name: (
+  - name: )
+- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand*
+  commentId: Overload:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
+  href: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.html#Library_Management_System_ViewModels_Pages_BrowseBooksViewModel_LoadMoreBooksCommand
+  name: LoadMoreBooksCommand
+  nameWithType: BrowseBooksViewModel.LoadMoreBooksCommand
+  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
+- uid: CommunityToolkit.Mvvm.Input
+  commentId: N:CommunityToolkit.Mvvm.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  name: CommunityToolkit.Mvvm.Input
+  nameWithType: CommunityToolkit.Mvvm.Input
+  fullName: CommunityToolkit.Mvvm.Input
+  spec.csharp:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
+  spec.vb:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
 - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchQuery*
   commentId: Overload:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchQuery
   href: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.html#Library_Management_System_ViewModels_Pages_BrowseBooksViewModel_SearchQuery
@@ -2566,51 +2639,6 @@ references:
   name: ReloadBooksCommand
   nameWithType: BrowseBooksViewModel.ReloadBooksCommand
   fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.ReloadBooksCommand
-- uid: CommunityToolkit.Mvvm.Input
-  commentId: N:CommunityToolkit.Mvvm.Input
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  name: CommunityToolkit.Mvvm.Input
-  nameWithType: CommunityToolkit.Mvvm.Input
-  fullName: CommunityToolkit.Mvvm.Input
-  spec.csharp:
-  - uid: CommunityToolkit
-    name: CommunityToolkit
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  - name: .
-  - uid: CommunityToolkit.Mvvm
-    name: Mvvm
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
-  - name: .
-  - uid: CommunityToolkit.Mvvm.Input
-    name: Input
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
-  spec.vb:
-  - uid: CommunityToolkit
-    name: CommunityToolkit
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
-  - name: .
-  - uid: CommunityToolkit.Mvvm
-    name: Mvvm
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
-  - name: .
-  - uid: CommunityToolkit.Mvvm.Input
-    name: Input
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input
-- uid: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
-  commentId: T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
-  parent: CommunityToolkit.Mvvm.Input
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.input.iasyncrelaycommand
-  name: IAsyncRelayCommand
-  nameWithType: IAsyncRelayCommand
-  fullName: CommunityToolkit.Mvvm.Input.IAsyncRelayCommand
 - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.Search
   commentId: M:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.Search
   name: Search()
@@ -2632,24 +2660,3 @@ references:
   name: SearchCommand
   nameWithType: BrowseBooksViewModel.SearchCommand
   fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.SearchCommand
-- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
-  commentId: M:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
-  name: LoadMoreBooks()
-  nameWithType: BrowseBooksViewModel.LoadMoreBooks()
-  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks()
-  spec.csharp:
-  - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
-    name: LoadMoreBooks
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooks
-    name: LoadMoreBooks
-  - name: (
-  - name: )
-- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand*
-  commentId: Overload:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand
-  href: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.html#Library_Management_System_ViewModels_Pages_BrowseBooksViewModel_LoadMoreBooksCommand
-  name: LoadMoreBooksCommand
-  nameWithType: BrowseBooksViewModel.LoadMoreBooksCommand
-  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.LoadMoreBooksCommand

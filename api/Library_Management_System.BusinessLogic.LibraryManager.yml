@@ -28,7 +28,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: LibraryManager
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 12
@@ -63,7 +63,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 20
@@ -98,7 +98,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetBooks
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 28
@@ -128,7 +128,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: AddBook
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 33
@@ -159,7 +159,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: UpdateBook
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 38
@@ -190,7 +190,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: DeleteBook
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 43
@@ -221,7 +221,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: SearchBooks
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 48
@@ -257,7 +257,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetBooksBySearchAsync
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 59
@@ -297,7 +297,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: PropertyChanged
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 72
@@ -324,7 +324,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnPropertyChanged
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 77
@@ -358,7 +358,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: CanLendBook
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 85
@@ -391,7 +391,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: CanReturnBook
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 96
@@ -424,7 +424,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LibraryManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetAvailableQuantity
     path: Library Management System/BusinessLogic/LibraryManager.cs
     startLine: 106

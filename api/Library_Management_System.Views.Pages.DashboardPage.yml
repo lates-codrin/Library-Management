@@ -19,7 +19,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Pages/DashboardPage.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: DashboardPage
     path: Library Management System/obj/Release/net9.0-windows/Views/Pages/DashboardPage.g.cs
     startLine: 45
@@ -652,7 +652,7 @@ items:
     remote:
       path: Library Management System/Views/Pages/DashboardPage.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ViewModel
     path: Library Management System/Views/Pages/DashboardPage.xaml.cs
     startLine: 7
@@ -688,7 +688,7 @@ items:
     remote:
       path: Library Management System/Views/Pages/DashboardPage.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/Views/Pages/DashboardPage.xaml.cs
     startLine: 9
@@ -720,7 +720,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Pages/DashboardPage.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: InitializeComponent
     path: Library Management System/obj/Release/net9.0-windows/Views/Pages/DashboardPage.g.cs
     startLine: 52

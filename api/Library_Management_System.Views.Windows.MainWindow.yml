@@ -26,7 +26,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Windows/MainWindow.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: MainWindow
     path: Library Management System/obj/Release/net9.0-windows/Views/Windows/MainWindow.g.cs
     startLine: 44
@@ -762,7 +762,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ViewModel
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 10
@@ -791,7 +791,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 12
@@ -827,7 +827,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetNavigation
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 31
@@ -855,7 +855,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: Navigate
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 33
@@ -892,7 +892,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: SetPageService
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 35
@@ -926,7 +926,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: ShowWindow
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 37
@@ -956,7 +956,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: CloseWindow
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 39
@@ -986,7 +986,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnClosed
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 46
@@ -1018,7 +1018,7 @@ items:
     remote:
       path: Library Management System/Views/Windows/MainWindow.xaml.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: SetServiceProvider
     path: Library Management System/Views/Windows/MainWindow.xaml.cs
     startLine: 58
@@ -1052,7 +1052,7 @@ items:
     remote:
       path: Library Management System/obj/Release/net9.0-windows/Views/Windows/MainWindow.g.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: InitializeComponent
     path: Library Management System/obj/Release/net9.0-windows/Views/Windows/MainWindow.g.cs
     startLine: 99

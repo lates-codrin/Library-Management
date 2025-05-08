@@ -25,7 +25,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: LendManager
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 13
@@ -62,7 +62,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: .ctor
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 23
@@ -100,7 +100,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: GetLendBooks
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 32
@@ -130,7 +130,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: AddLendBook
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 38
@@ -162,7 +162,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: UpdateLendBook
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 48
@@ -194,7 +194,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: DeleteLendBook
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 62
@@ -226,7 +226,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: BooksStatusChanged
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 70
@@ -255,7 +255,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: SearchLendBooks
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 94
@@ -293,7 +293,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: PropertyChanged
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 103
@@ -324,7 +324,7 @@ items:
     remote:
       path: Library Management System/BusinessLogic/LendManager.cs
       branch: master
-      repo: https://github.com/lates-codrin/Library-Management-System.git
+      repo: https://github.com/lates-codrin/Library-Management.git
     id: OnPropertyChanged
     path: Library Management System/BusinessLogic/LendManager.cs
     startLine: 109
