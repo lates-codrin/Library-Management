@@ -44,7 +44,7 @@
             <TextBlock FontSize="16" FontWeight="SemiBold" Text="Use Default Key (Add 'sk-' in front!):" Margin="0,20,0,6" />
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                <TextBox Text="proj-ZM0ePwXIfl5iDfUd2HgOQsFCZJlb29EClLHvEaLw4RkiihL7zhp_UPlu2ughdqi6iwy76yrennT3BlbkFJZXwUKgNvbFlJRF9Hxh1O6yrCo5UkaqgXu749uRHzm0qEQbDKN-JL7sBrVRtQl7b1xUJ27ksRkA" 
+                <TextBox Text="proj-PjZjuyTu4wowxOlucvIWAlF4o-LCygncokz8MZg5jJNmJ-mNHhtRwCGYDdO2diPSX1iPX3QOElT3BlbkFJMzsLX-uzNeBCjuS0FJPUXy4OLkvWvgUPyuNJbiaaRDbIdF38kFNdJWl68azLGt5e6q5ycwbaUA" 
              IsReadOnly="True"
              Height="35"
              FontSize="14"
