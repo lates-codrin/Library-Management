@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://i.imgur.com/cftZsqd.png" width="800" height="500" alt="Library Management System Mockup Image"/>
+  <img src="https://i.imgur.com/cftZsqd.png" alt="Library Management System Mockup Image" style="max-width: 100%; height: auto;" />
 </p>
+
 
 ### [!] Notice
 - You may not commit to this project. If you find something bothering you, please open an issue first! 👍
