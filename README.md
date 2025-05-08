@@ -12,26 +12,85 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 
 ---
 
-## ✨ Features
 
-### ✅ Core Functionalities
-- **Book Management (CRUD):**
-  - Add, update, delete, and view books.
-    
-- **Search & Filter:**
-  - Search books by title, author, or status.
-    
-- **Lending Process:**
-  - Issue and return books with automated stock updates.
-  - Status-based logic to prevent lending when out of stock and handle returns correctly.
-    
-- **Persistent Storage:**
-  - Book and lending records stored locally using **JSON files**.
+# 🚀 How to Run the Project
 
-### 🧠 Extra Feature – AI Book Recommender (Powered by GPT)
-- 📘 **Input:** Book title, genre/category, and synopsis.
-- 🤖 **Output:** Personalized book recommendations generated using GPT.
-- A creative extension designed to elevate the library experience with intelligent suggestions.
+## 🔹 Method 1: Using Visual Studio (Recommended)
+1. Clone the Repository
+2. Open a terminal or Git Bash and run:
+
+```bash
+git clone https://github.com/lates-codrin/Library-Management.git
+```
+
+3. Open the Solution File (*Library_Management_System.sln*)
+
+4. Restore Dependencies & Build
+Visual Studio will automatically restore NuGet packages. Then build the project using:
+Build > Build Solution or Ctrl + Shift + B
+
+5. Run the Application
+Click the green Start button or press F5.
+
+---
+
+Method 2: Download the source code
+1. Download the project from GitHub:
+<p align="center">
+  <img src="https://i.imgur.com/SdtVaA3.png" width="800" height="500"/>
+</p>
+
+2. Open the .zip > first folder > .sln solution
+3. Build & run using the built-in Visual Studio tools
+
+---
+
+Method 3: Download the release
+
+1. Download the release (x64.zip) [here](https://github.com/lates-codrin/Library-Management/releases/tag/v0.0.1-alpha).
+2. Open the .zip > folder > .exe
+3. The application should start as usual
+
+
+## HOW TO RUN SPECIAL FEATURE:
+To enjoy the AI-powered book recommendation feature, you'll need an OpenAI API key. You have two simple options:
+
+## 🔹 **Option 1**: Use the Built-in Key (Default)
+No action required — a preloaded OpenAI key with a $5 credit limit (already covered) is integrated directly into the application. Just launch and enjoy!
+
+## 🔹 **Option 2**: Use Your Own Key
+Prefer using your personal OpenAI account? Follow these steps:
+
+1. Sign in to the OpenAI platform: https://platform.openai.com/api-keys
+2. Generate an API key from your account dashboard.
+3. Purchase $5 in credits to enable usage.
+4. Copy your key and store it securely.
+5. Open the app, navigate to the settings, paste your key, click Save, then restart the application.
+
+You're now ready to get personalized, intelligent book recommendations!
+---
+
+# Documentation Website (DocFX)
+
+## Prerequisites
+
+Familiarity with the command line
+Install .NET SDK 8.0 or higher
+Install Node.js v20 or higher (Optional: It's required when using Create PDF Files)
+
+Make sure you have .NET SDK installed, then open a terminal and enter the following command to install the latest docfx:
+```bash
+dotnet tool update -g docfx
+```
+
+1. Open a terminal
+2. Run 
+```bash
+docfx --serve
+```
+3. Restart PC
+4. Open the link provided in the console by docfx
+
 
 
 
@@ -43,53 +102,6 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 - **OpenAI GPT API Integration** (for book recommendations)
 - **WPF UI** (via [WPF-UI](https://wpfui.lepo.co/))
   
-
-
-## 🚀 How to Run the Project
-
-### Prerequisites
-
-- Visual Studio 2022+
-- .NET 8.0 SDK or later
-
-
-### Steps
-
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/lates-codrin/library-management.git
-   ```
-
-1. **Open the Solution in Visual Studio**
-Open Library_Management_System.sln.
-
-2. **Build the Project**
-Press Ctrl+Shift+B or use the Build menu.
-
-3. **Run the Application**
-Press F5 or click the green Start button.
-
-Or simply download the project and run the .sln file.
----
-
-📘 Generate Documentation with DocFX
-Install DocFX (if not already installed)
-
-```bash
-choco install docfx -y
-```
-Or via their website if you don't have choco installed (make sure to restart so it's registered in env)
-
-```bash
-docfx build
-```
-
-or directly 
-```bash
-docfx serve
-```
-
-This will host the documentation locally, typically at http://localhost:8080.
 
 ---
 
