@@ -57,7 +57,7 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/lates-codrin/library-management-system.git
+   git clone https://github.com/lates-codrin/library-management.git
    ```
 
 1. **Open the Solution in Visual Studio**
