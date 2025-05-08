@@ -6,14 +6,7 @@
 - You may not commit to this project. If you find something bothering you, please open an issue first! 👍
 
 # 📚 Library Management System (.NET)
-<p align="center">
-  <a href="https://github.com/lates-codrin/Library-Management-System/archive/refs/tags/1.0.0-alpha.zip">
-    <img src="https://img.shields.io/badge/⬇️%20Download-Source%20Code-blue?style=for-the-badge" alt="Download Source Code"/>
-  </a>
-  <a href="https://github.com/lates-codrin/Library-Management-System/releases/download/1.0.0-alpha/PreRelease.zip">
-    <img src="https://img.shields.io/badge/📦%20Download-Pre--Release-orange?style=for-the-badge" alt="Download Pre-release"/>
-  </a>
-</p>
+
 
 A desktop-based Library Management System built in C# with a multi-layered architecture. This project is developed as part of the Internship 2025 and aims to provide a user-friendly way for library admins to manage book inventories, issue and return books, and receive book recommendations using AI.
 
