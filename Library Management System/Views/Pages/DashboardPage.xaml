@@ -18,16 +18,13 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Dashboard Header -->
         <TextBlock Text="Library Dashboard"
                    FontSize="28"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"
                    Margin="0,0,0,20" />
 
-        <!-- Gauges Section -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
-            <!-- Lent -->
             <StackPanel>
                 <TextBlock Text="Lent Books"
                            FontSize="16"
@@ -39,7 +36,6 @@
                 </Border>
             </StackPanel>
 
-            <!-- Returned -->
             <StackPanel>
                 <TextBlock Text="Returned Books"
                            FontSize="16"
@@ -51,7 +47,6 @@
                 </Border>
             </StackPanel>
 
-            <!-- In Storage -->
             <StackPanel>
                 <TextBlock Text="In Storage"
                            FontSize="16"
@@ -64,7 +59,6 @@
             </StackPanel>
         </StackPanel>
 
-        <!-- Stats Summary -->
         <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Center" Margin="0,30">
             <TextBlock Text="Summary" FontSize="18" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,10" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

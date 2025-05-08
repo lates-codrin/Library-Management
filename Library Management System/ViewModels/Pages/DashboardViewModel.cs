@@ -60,7 +60,7 @@ namespace Library_Management_System.ViewModels.Pages
             int currentlyLent = BooksLentCount;
 
             // no negative numbers
-            BooksInStorageCount = Math.Max(0, totalInInventory - currentlyLent);
+            BooksInStorageCount = Math.Max(0, totalInInventory);
 
             int total = BooksLentCount + BooksReturnedCount + BooksInStorageCount;
             int safeDiv(int val) => total == 0 ? 0 : (int)((val / (double)total) * 100 + 0.5);
