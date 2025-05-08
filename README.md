@@ -117,6 +117,9 @@ docfx --serve
 - **OpenAI GPT API Integration** (for book recommendations)
 - **WPF UI** (via [WPF-UI](https://wpfui.lepo.co/))
   
+<p align="center">
+  <img src="https://i.imgur.com/oLldy3v.png" alt="Schema" style="max-width: 100%; height: auto;" />
+</p>
 
 ---
 
