@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Data.ILendBookRepository
+  commentId: T:Library_Management_System.Data.ILendBookRepository
+  id: ILendBookRepository
+  parent: Library_Management_System.Data
+  children:
+  - Library_Management_System.Data.ILendBookRepository.Add(Library_Management_System.Models.LendBook)
+  - Library_Management_System.Data.ILendBookRepository.Delete(Library_Management_System.Models.LendBook)
+  - Library_Management_System.Data.ILendBookRepository.GetAll
+  - Library_Management_System.Data.ILendBookRepository.Update(Library_Management_System.Models.LendBook)
+  langs:
+  - csharp
+  - vb
+  name: ILendBookRepository
+  nameWithType: ILendBookRepository
+  fullName: Library_Management_System.Data.ILendBookRepository
+  type: Interface
+  source:
+    remote:
+      path: Library Management System/Data/ILendBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: ILendBookRepository
+    path: Library Management System/Data/ILendBookRepository.cs
+    startLine: 9
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: public interface ILendBookRepository
+    content.vb: Public Interface ILendBookRepository
+- uid: Library_Management_System.Data.ILendBookRepository.GetAll
+  commentId: M:Library_Management_System.Data.ILendBookRepository.GetAll
+  id: GetAll
+  parent: Library_Management_System.Data.ILendBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: ILendBookRepository.GetAll()
+  fullName: Library_Management_System.Data.ILendBookRepository.GetAll()
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/ILendBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: GetAll
+    path: Library Management System/Data/ILendBookRepository.cs
+    startLine: 11
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: IEnumerable<LendBook> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{Library_Management_System.Models.LendBook}
+    content.vb: Function GetAll() As IEnumerable(Of LendBook)
+  overload: Library_Management_System.Data.ILendBookRepository.GetAll*
+- uid: Library_Management_System.Data.ILendBookRepository.Add(Library_Management_System.Models.LendBook)
+  commentId: M:Library_Management_System.Data.ILendBookRepository.Add(Library_Management_System.Models.LendBook)
+  id: Add(Library_Management_System.Models.LendBook)
+  parent: Library_Management_System.Data.ILendBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Add(LendBook)
+  nameWithType: ILendBookRepository.Add(LendBook)
+  fullName: Library_Management_System.Data.ILendBookRepository.Add(Library_Management_System.Models.LendBook)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/ILendBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Add
+    path: Library Management System/Data/ILendBookRepository.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Add(LendBook lendBook)
+    parameters:
+    - id: lendBook
+      type: Library_Management_System.Models.LendBook
+    content.vb: Sub Add(lendBook As LendBook)
+  overload: Library_Management_System.Data.ILendBookRepository.Add*
+- uid: Library_Management_System.Data.ILendBookRepository.Update(Library_Management_System.Models.LendBook)
+  commentId: M:Library_Management_System.Data.ILendBookRepository.Update(Library_Management_System.Models.LendBook)
+  id: Update(Library_Management_System.Models.LendBook)
+  parent: Library_Management_System.Data.ILendBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Update(LendBook)
+  nameWithType: ILendBookRepository.Update(LendBook)
+  fullName: Library_Management_System.Data.ILendBookRepository.Update(Library_Management_System.Models.LendBook)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/ILendBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Update
+    path: Library Management System/Data/ILendBookRepository.cs
+    startLine: 13
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Update(LendBook lendBook)
+    parameters:
+    - id: lendBook
+      type: Library_Management_System.Models.LendBook
+    content.vb: Sub Update(lendBook As LendBook)
+  overload: Library_Management_System.Data.ILendBookRepository.Update*
+- uid: Library_Management_System.Data.ILendBookRepository.Delete(Library_Management_System.Models.LendBook)
+  commentId: M:Library_Management_System.Data.ILendBookRepository.Delete(Library_Management_System.Models.LendBook)
+  id: Delete(Library_Management_System.Models.LendBook)
+  parent: Library_Management_System.Data.ILendBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Delete(LendBook)
+  nameWithType: ILendBookRepository.Delete(LendBook)
+  fullName: Library_Management_System.Data.ILendBookRepository.Delete(Library_Management_System.Models.LendBook)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/ILendBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Delete
+    path: Library Management System/Data/ILendBookRepository.cs
+    startLine: 14
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Delete(LendBook lendBook)
+    parameters:
+    - id: lendBook
+      type: Library_Management_System.Models.LendBook
+    content.vb: Sub Delete(lendBook As LendBook)
+  overload: Library_Management_System.Data.ILendBookRepository.Delete*
+references:
+- uid: Library_Management_System.Data
+  commentId: N:Library_Management_System.Data
+  href: Library_Management_System.html
+  name: Library_Management_System.Data
+  nameWithType: Library_Management_System.Data
+  fullName: Library_Management_System.Data
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
+- uid: Library_Management_System.Data.ILendBookRepository.GetAll*
+  commentId: Overload:Library_Management_System.Data.ILendBookRepository.GetAll
+  href: Library_Management_System.Data.ILendBookRepository.html#Library_Management_System_Data_ILendBookRepository_GetAll
+  name: GetAll
+  nameWithType: ILendBookRepository.GetAll
+  fullName: Library_Management_System.Data.ILendBookRepository.GetAll
+- uid: System.Collections.Generic.IEnumerable{Library_Management_System.Models.LendBook}
+  commentId: T:System.Collections.Generic.IEnumerable{Library_Management_System.Models.LendBook}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LendBook>
+  nameWithType: IEnumerable<LendBook>
+  fullName: System.Collections.Generic.IEnumerable<Library_Management_System.Models.LendBook>
+  nameWithType.vb: IEnumerable(Of LendBook)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Library_Management_System.Models.LendBook)
+  name.vb: IEnumerable(Of LendBook)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Library_Management_System.Models.LendBook
+    name: LendBook
+    href: Library_Management_System.Models.LendBook.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Library_Management_System.Models.LendBook
+    name: LendBook
+    href: Library_Management_System.Models.LendBook.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Library_Management_System.Data.ILendBookRepository.Add*
+  commentId: Overload:Library_Management_System.Data.ILendBookRepository.Add
+  href: Library_Management_System.Data.ILendBookRepository.html#Library_Management_System_Data_ILendBookRepository_Add_Library_Management_System_Models_LendBook_
+  name: Add
+  nameWithType: ILendBookRepository.Add
+  fullName: Library_Management_System.Data.ILendBookRepository.Add
+- uid: Library_Management_System.Models.LendBook
+  commentId: T:Library_Management_System.Models.LendBook
+  parent: Library_Management_System.Models
+  href: Library_Management_System.Models.LendBook.html
+  name: LendBook
+  nameWithType: LendBook
+  fullName: Library_Management_System.Models.LendBook
+- uid: Library_Management_System.Models
+  commentId: N:Library_Management_System.Models
+  href: Library_Management_System.html
+  name: Library_Management_System.Models
+  nameWithType: Library_Management_System.Models
+  fullName: Library_Management_System.Models
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html
+- uid: Library_Management_System.Data.ILendBookRepository.Update*
+  commentId: Overload:Library_Management_System.Data.ILendBookRepository.Update
+  href: Library_Management_System.Data.ILendBookRepository.html#Library_Management_System_Data_ILendBookRepository_Update_Library_Management_System_Models_LendBook_
+  name: Update
+  nameWithType: ILendBookRepository.Update
+  fullName: Library_Management_System.Data.ILendBookRepository.Update
+- uid: Library_Management_System.Data.ILendBookRepository.Delete*
+  commentId: Overload:Library_Management_System.Data.ILendBookRepository.Delete
+  href: Library_Management_System.Data.ILendBookRepository.html#Library_Management_System_Data_ILendBookRepository_Delete_Library_Management_System_Models_LendBook_
+  name: Delete
+  nameWithType: ILendBookRepository.Delete
+  fullName: Library_Management_System.Data.ILendBookRepository.Delete

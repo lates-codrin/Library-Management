@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Views.Windows
+  commentId: N:Library_Management_System.Views.Windows
+  id: Library_Management_System.Views.Windows
+  children:
+  - Library_Management_System.Views.Windows.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Views.Windows
+  nameWithType: Library_Management_System.Views.Windows
+  fullName: Library_Management_System.Views.Windows
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Views.Windows.MainWindow
+  commentId: T:Library_Management_System.Views.Windows.MainWindow
+  href: Library_Management_System.Views.Windows.MainWindow.html
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Library_Management_System.Views.Windows.MainWindow

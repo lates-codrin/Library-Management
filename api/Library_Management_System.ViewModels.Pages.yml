@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.ViewModels.Pages
+  commentId: N:Library_Management_System.ViewModels.Pages
+  id: Library_Management_System.ViewModels.Pages
+  children:
+  - Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+  - Library_Management_System.ViewModels.Pages.ConnectBotViewModel
+  - Library_Management_System.ViewModels.Pages.DashboardViewModel
+  - Library_Management_System.ViewModels.Pages.DataViewModel
+  - Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  - Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+  - Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+  - Library_Management_System.ViewModels.Pages.SettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.ViewModels.Pages
+  nameWithType: Library_Management_System.ViewModels.Pages
+  fullName: Library_Management_System.ViewModels.Pages
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.html
+  name: BrowseBooksViewModel
+  nameWithType: BrowseBooksViewModel
+  fullName: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+- uid: Library_Management_System.ViewModels.Pages.ConnectBotViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.ConnectBotViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.ConnectBotViewModel.html
+  name: ConnectBotViewModel
+  nameWithType: ConnectBotViewModel
+  fullName: Library_Management_System.ViewModels.Pages.ConnectBotViewModel
+- uid: Library_Management_System.ViewModels.Pages.DashboardViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.DashboardViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.DashboardViewModel.html
+  name: DashboardViewModel
+  nameWithType: DashboardViewModel
+  fullName: Library_Management_System.ViewModels.Pages.DashboardViewModel
+- uid: Library_Management_System.ViewModels.Pages.DataViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.DataViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.DataViewModel.html
+  name: DataViewModel
+  nameWithType: DataViewModel
+  fullName: Library_Management_System.ViewModels.Pages.DataViewModel
+- uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.LendBooksViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.LendBooksViewModel.html
+  name: LendBooksViewModel
+  nameWithType: LendBooksViewModel
+  fullName: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+- uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html
+  name: ManageBooksViewModel
+  nameWithType: ManageBooksViewModel
+  fullName: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+- uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.html
+  name: OpenAIKeysViewModel
+  nameWithType: OpenAIKeysViewModel
+  fullName: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+- uid: Library_Management_System.ViewModels.Pages.SettingsViewModel
+  commentId: T:Library_Management_System.ViewModels.Pages.SettingsViewModel
+  parent: Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.ViewModels.Pages.SettingsViewModel.html
+  name: SettingsViewModel
+  nameWithType: SettingsViewModel
+  fullName: Library_Management_System.ViewModels.Pages.SettingsViewModel
+- uid: Library_Management_System.ViewModels.Pages
+  commentId: N:Library_Management_System.ViewModels.Pages
+  href: Library_Management_System.html
+  name: Library_Management_System.ViewModels.Pages
+  nameWithType: Library_Management_System.ViewModels.Pages
+  fullName: Library_Management_System.ViewModels.Pages
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.ViewModels
+    name: ViewModels
+    href: Library_Management_System.ViewModels.html
+  - name: .
+  - uid: Library_Management_System.ViewModels.Pages
+    name: Pages
+    href: Library_Management_System.ViewModels.Pages.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.ViewModels
+    name: ViewModels
+    href: Library_Management_System.ViewModels.html
+  - name: .
+  - uid: Library_Management_System.ViewModels.Pages
+    name: Pages
+    href: Library_Management_System.ViewModels.Pages.html

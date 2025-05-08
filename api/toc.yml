@@ -1,0 +1,139 @@
+### YamlMime:TableOfContent
+items:
+- uid: Library_Management_System
+  name: Library_Management_System
+  type: Namespace
+  items:
+  - uid: Library_Management_System.App
+    name: App
+    type: Class
+- uid: Library_Management_System.BusinessLogic
+  name: Library_Management_System.BusinessLogic
+  type: Namespace
+  items:
+  - uid: Library_Management_System.BusinessLogic.LendManager
+    name: LendManager
+    type: Class
+  - uid: Library_Management_System.BusinessLogic.LibraryManager
+    name: LibraryManager
+    type: Class
+  - uid: Library_Management_System.BusinessLogic.RecommendationService
+    name: RecommendationService
+    type: Class
+- uid: Library_Management_System.Data
+  name: Library_Management_System.Data
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Data.BookRepository
+    name: BookRepository
+    type: Class
+  - uid: Library_Management_System.Data.IBookRepository
+    name: IBookRepository
+    type: Interface
+  - uid: Library_Management_System.Data.ILendBookRepository
+    name: ILendBookRepository
+    type: Interface
+- uid: Library_Management_System.Models
+  name: Library_Management_System.Models
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Models.AppConfig
+    name: AppConfig
+    type: Class
+  - uid: Library_Management_System.Models.Book
+    name: Book
+    type: Class
+  - uid: Library_Management_System.Models.DataColor
+    name: DataColor
+    type: Struct
+  - uid: Library_Management_System.Models.LendBook
+    name: LendBook
+    type: Class
+- uid: Library_Management_System.Resources
+  name: Library_Management_System.Resources
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Resources.Translations
+    name: Translations
+    type: Class
+- uid: Library_Management_System.Services
+  name: Library_Management_System.Services
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Services.ApplicationHostService
+    name: ApplicationHostService
+    type: Class
+  - uid: Library_Management_System.Services.SettingsManager
+    name: SettingsManager
+    type: Class
+- uid: Library_Management_System.ViewModels.Pages
+  name: Library_Management_System.ViewModels.Pages
+  type: Namespace
+  items:
+  - uid: Library_Management_System.ViewModels.Pages.BrowseBooksViewModel
+    name: BrowseBooksViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.ConnectBotViewModel
+    name: ConnectBotViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.DashboardViewModel
+    name: DashboardViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.DataViewModel
+    name: DataViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.LendBooksViewModel
+    name: LendBooksViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.ManageBooksViewModel
+    name: ManageBooksViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel
+    name: OpenAIKeysViewModel
+    type: Class
+  - uid: Library_Management_System.ViewModels.Pages.SettingsViewModel
+    name: SettingsViewModel
+    type: Class
+- uid: Library_Management_System.ViewModels.Windows
+  name: Library_Management_System.ViewModels.Windows
+  type: Namespace
+  items:
+  - uid: Library_Management_System.ViewModels.Windows.MainWindowViewModel
+    name: MainWindowViewModel
+    type: Class
+- uid: Library_Management_System.Views.Pages
+  name: Library_Management_System.Views.Pages
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Views.Pages.BrowseBooksPage
+    name: BrowseBooksPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.ConnectBotPage
+    name: ConnectBotPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.DashboardPage
+    name: DashboardPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.DataPage
+    name: DataPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.LendBooksPage
+    name: LendBooksPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.ManageBooksPage
+    name: ManageBooksPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.OpenAIKeysPage
+    name: OpenAIKeysPage
+    type: Class
+  - uid: Library_Management_System.Views.Pages.SettingsPage
+    name: SettingsPage
+    type: Class
+- uid: Library_Management_System.Views.Windows
+  name: Library_Management_System.Views.Windows
+  type: Namespace
+  items:
+  - uid: Library_Management_System.Views.Windows.MainWindow
+    name: MainWindow
+    type: Class
+memberLayout: SamePage

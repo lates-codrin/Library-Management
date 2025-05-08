@@ -1,0 +1,38 @@
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
+
+namespace Library_Management_System.Models
+{
+    public partial class LendBook : ObservableObject
+    {
+        [ObservableProperty]
+        private Guid issueId;
+
+        [ObservableProperty]
+        private string name;
+
+        [ObservableProperty]
+        private string contact;
+
+        [ObservableProperty]
+        private string email;
+
+        [ObservableProperty]
+        private string bookTitle;
+
+        [ObservableProperty]
+        private string author;
+
+        [ObservableProperty]
+        private DateTime dateIssue;
+
+        [ObservableProperty]
+        private DateTime dateReturn;
+
+        [ObservableProperty]
+        private string status;
+
+        [ObservableProperty]
+        private string recommendation;
+    }
+}

@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Data.IBookRepository
+  commentId: T:Library_Management_System.Data.IBookRepository
+  id: IBookRepository
+  parent: Library_Management_System.Data
+  children:
+  - Library_Management_System.Data.IBookRepository.Add(Library_Management_System.Models.Book)
+  - Library_Management_System.Data.IBookRepository.Delete(Library_Management_System.Models.Book)
+  - Library_Management_System.Data.IBookRepository.GetAll
+  - Library_Management_System.Data.IBookRepository.GetAllBooks
+  - Library_Management_System.Data.IBookRepository.Update(Library_Management_System.Models.Book)
+  langs:
+  - csharp
+  - vb
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: Library_Management_System.Data.IBookRepository
+  type: Interface
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: IBookRepository
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 9
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: public interface IBookRepository
+    content.vb: Public Interface IBookRepository
+- uid: Library_Management_System.Data.IBookRepository.GetAll
+  commentId: M:Library_Management_System.Data.IBookRepository.GetAll
+  id: GetAll
+  parent: Library_Management_System.Data.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IBookRepository.GetAll()
+  fullName: Library_Management_System.Data.IBookRepository.GetAll()
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: GetAll
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 11
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: IEnumerable<Book> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{Library_Management_System.Models.Book}
+    content.vb: Function GetAll() As IEnumerable(Of Book)
+  overload: Library_Management_System.Data.IBookRepository.GetAll*
+- uid: Library_Management_System.Data.IBookRepository.GetAllBooks
+  commentId: M:Library_Management_System.Data.IBookRepository.GetAllBooks
+  id: GetAllBooks
+  parent: Library_Management_System.Data.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllBooks()
+  nameWithType: IBookRepository.GetAllBooks()
+  fullName: Library_Management_System.Data.IBookRepository.GetAllBooks()
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: GetAllBooks
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 12
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: IEnumerable<Book> GetAllBooks()
+    return:
+      type: System.Collections.Generic.IEnumerable{Library_Management_System.Models.Book}
+    content.vb: Function GetAllBooks() As IEnumerable(Of Book)
+  overload: Library_Management_System.Data.IBookRepository.GetAllBooks*
+- uid: Library_Management_System.Data.IBookRepository.Add(Library_Management_System.Models.Book)
+  commentId: M:Library_Management_System.Data.IBookRepository.Add(Library_Management_System.Models.Book)
+  id: Add(Library_Management_System.Models.Book)
+  parent: Library_Management_System.Data.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Add(Book)
+  nameWithType: IBookRepository.Add(Book)
+  fullName: Library_Management_System.Data.IBookRepository.Add(Library_Management_System.Models.Book)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Add
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 13
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Add(Book book)
+    parameters:
+    - id: book
+      type: Library_Management_System.Models.Book
+    content.vb: Sub Add(book As Book)
+  overload: Library_Management_System.Data.IBookRepository.Add*
+- uid: Library_Management_System.Data.IBookRepository.Update(Library_Management_System.Models.Book)
+  commentId: M:Library_Management_System.Data.IBookRepository.Update(Library_Management_System.Models.Book)
+  id: Update(Library_Management_System.Models.Book)
+  parent: Library_Management_System.Data.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Update(Book)
+  nameWithType: IBookRepository.Update(Book)
+  fullName: Library_Management_System.Data.IBookRepository.Update(Library_Management_System.Models.Book)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Update
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 14
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Update(Book book)
+    parameters:
+    - id: book
+      type: Library_Management_System.Models.Book
+    content.vb: Sub Update(book As Book)
+  overload: Library_Management_System.Data.IBookRepository.Update*
+- uid: Library_Management_System.Data.IBookRepository.Delete(Library_Management_System.Models.Book)
+  commentId: M:Library_Management_System.Data.IBookRepository.Delete(Library_Management_System.Models.Book)
+  id: Delete(Library_Management_System.Models.Book)
+  parent: Library_Management_System.Data.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Delete(Book)
+  nameWithType: IBookRepository.Delete(Book)
+  fullName: Library_Management_System.Data.IBookRepository.Delete(Library_Management_System.Models.Book)
+  type: Method
+  source:
+    remote:
+      path: Library Management System/Data/IBookRepository.cs
+      branch: master
+      repo: https://github.com/lates-codrin/Library-Management-System.git
+    id: Delete
+    path: Library Management System/Data/IBookRepository.cs
+    startLine: 15
+  assemblies:
+  - Library Management System
+  namespace: Library_Management_System.Data
+  syntax:
+    content: void Delete(Book book)
+    parameters:
+    - id: book
+      type: Library_Management_System.Models.Book
+    content.vb: Sub Delete(book As Book)
+  overload: Library_Management_System.Data.IBookRepository.Delete*
+references:
+- uid: Library_Management_System.Data
+  commentId: N:Library_Management_System.Data
+  href: Library_Management_System.html
+  name: Library_Management_System.Data
+  nameWithType: Library_Management_System.Data
+  fullName: Library_Management_System.Data
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
+- uid: Library_Management_System.Data.IBookRepository.GetAll*
+  commentId: Overload:Library_Management_System.Data.IBookRepository.GetAll
+  href: Library_Management_System.Data.IBookRepository.html#Library_Management_System_Data_IBookRepository_GetAll
+  name: GetAll
+  nameWithType: IBookRepository.GetAll
+  fullName: Library_Management_System.Data.IBookRepository.GetAll
+- uid: System.Collections.Generic.IEnumerable{Library_Management_System.Models.Book}
+  commentId: T:System.Collections.Generic.IEnumerable{Library_Management_System.Models.Book}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Book>
+  nameWithType: IEnumerable<Book>
+  fullName: System.Collections.Generic.IEnumerable<Library_Management_System.Models.Book>
+  nameWithType.vb: IEnumerable(Of Book)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Library_Management_System.Models.Book)
+  name.vb: IEnumerable(Of Book)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Library_Management_System.Models.Book
+    name: Book
+    href: Library_Management_System.Models.Book.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Library_Management_System.Models.Book
+    name: Book
+    href: Library_Management_System.Models.Book.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Library_Management_System.Data.IBookRepository.GetAllBooks*
+  commentId: Overload:Library_Management_System.Data.IBookRepository.GetAllBooks
+  href: Library_Management_System.Data.IBookRepository.html#Library_Management_System_Data_IBookRepository_GetAllBooks
+  name: GetAllBooks
+  nameWithType: IBookRepository.GetAllBooks
+  fullName: Library_Management_System.Data.IBookRepository.GetAllBooks
+- uid: Library_Management_System.Data.IBookRepository.Add*
+  commentId: Overload:Library_Management_System.Data.IBookRepository.Add
+  href: Library_Management_System.Data.IBookRepository.html#Library_Management_System_Data_IBookRepository_Add_Library_Management_System_Models_Book_
+  name: Add
+  nameWithType: IBookRepository.Add
+  fullName: Library_Management_System.Data.IBookRepository.Add
+- uid: Library_Management_System.Models.Book
+  commentId: T:Library_Management_System.Models.Book
+  parent: Library_Management_System.Models
+  href: Library_Management_System.Models.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: Library_Management_System.Models.Book
+- uid: Library_Management_System.Models
+  commentId: N:Library_Management_System.Models
+  href: Library_Management_System.html
+  name: Library_Management_System.Models
+  nameWithType: Library_Management_System.Models
+  fullName: Library_Management_System.Models
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html
+- uid: Library_Management_System.Data.IBookRepository.Update*
+  commentId: Overload:Library_Management_System.Data.IBookRepository.Update
+  href: Library_Management_System.Data.IBookRepository.html#Library_Management_System_Data_IBookRepository_Update_Library_Management_System_Models_Book_
+  name: Update
+  nameWithType: IBookRepository.Update
+  fullName: Library_Management_System.Data.IBookRepository.Update
+- uid: Library_Management_System.Data.IBookRepository.Delete*
+  commentId: Overload:Library_Management_System.Data.IBookRepository.Delete
+  href: Library_Management_System.Data.IBookRepository.html#Library_Management_System_Data_IBookRepository_Delete_Library_Management_System_Models_Book_
+  name: Delete
+  nameWithType: IBookRepository.Delete
+  fullName: Library_Management_System.Data.IBookRepository.Delete

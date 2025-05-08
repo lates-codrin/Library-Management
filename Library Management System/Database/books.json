@@ -1,0 +1,902 @@
+[
+  {
+    "Id": "e75c2583-23b6-4d46-b329-f096b3f48cd3",
+    "Title": "Book 1",
+    "Author": "Author B",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "ad13a447-f4f3-4fb6-af87-f9b56d29ba37",
+    "Title": "Book 2",
+    "Author": "Author C",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d585903e-61b5-463b-8c93-68d2287e1b93",
+    "Title": "Book 3",
+    "Author": "Author D",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "99386649-fb13-4810-8435-d8befd2c19c0",
+    "Title": "Book 4",
+    "Author": "Author E",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "2d993bfa-cccf-491e-8bc8-9b3d78f70760",
+    "Title": "Book 5",
+    "Author": "Author F",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "eab5b891-c818-4d8b-9823-57a40f50a272",
+    "Title": "Book 6",
+    "Author": "Author G",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "c4069ba7-4bdd-4015-8641-294ea7a073fd",
+    "Title": "Book 7",
+    "Author": "Author H",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "bc430871-aa84-4356-937b-ad5e2def3e1c",
+    "Title": "Book 8",
+    "Author": "Author I",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "44a68de2-a760-4d73-8cbc-8232c7fe8628",
+    "Title": "Book 9",
+    "Author": "Author J",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "bf1de58f-fcbb-4890-a8c6-93aa269ce397",
+    "Title": "Book 10",
+    "Author": "Author K",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d6db7858-3229-4199-bd17-6d985533d507",
+    "Title": "Book 11",
+    "Author": "Author L",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "26f66a51-0069-4371-9a9d-7bdbada8555b",
+    "Title": "Book 12",
+    "Author": "Author M",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "8de156be-3380-4f91-9e50-8d19a7326654",
+    "Title": "Book 13",
+    "Author": "Author N",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "4d2fb91f-b964-480b-83eb-ea8dfa4a06ab",
+    "Title": "Book 14",
+    "Author": "Author O",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "5f7ef830-4a94-4ac8-bb47-e4d5c1adf638",
+    "Title": "Book 15",
+    "Author": "Author P",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "a98f5d7a-2090-40ca-88e3-ba17f8da4ca6",
+    "Title": "Book 16",
+    "Author": "Author Q",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "066b5a60-e891-42a4-9667-4b5d5942f922",
+    "Title": "Book 17",
+    "Author": "Author R",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "6af448b8-b132-46a5-9a33-feaebf1719f1",
+    "Title": "Book 18",
+    "Author": "Author S",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "33dbd2e7-2968-4b3a-bfd0-e88cee59c9b1",
+    "Title": "Book 19",
+    "Author": "Author T",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "94444cce-c501-4d4a-8668-9b4ab1b351f0",
+    "Title": "Book 20",
+    "Author": "Author U",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "026d98a4-3938-4585-be67-a8cadec2da92",
+    "Title": "Book 21",
+    "Author": "Author V",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "00d027bc-a5a6-41aa-a973-d094a3cce583",
+    "Title": "Book 22",
+    "Author": "Author W",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "81232feb-973a-47f1-a664-79f456d353da",
+    "Title": "Book 23",
+    "Author": "Author X",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "3d6886fa-f264-4245-99dc-1e2d06a3e293",
+    "Title": "Book 24",
+    "Author": "Author Y",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "3140e0a2-729c-4d7b-afca-3e660e09bbbb",
+    "Title": "Book 25",
+    "Author": "Author Z",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "e73f1f9b-4409-44cc-a856-bb3feaafdf32",
+    "Title": "Book 26",
+    "Author": "Author A",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "0c6a0ac3-75d1-4984-9c47-f60eaae5ed9d",
+    "Title": "Book 27",
+    "Author": "Author B",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "bfee7e63-66a1-49e3-9300-e58ba15f04b2",
+    "Title": "Book 28",
+    "Author": "Author C",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "cc8c5108-4768-4859-a7dc-6f12e10a1cca",
+    "Title": "Book 29",
+    "Author": "Author D",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d6e77251-d583-4bc9-8289-91a90ad4b931",
+    "Title": "Book 30",
+    "Author": "Author E",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d0e5a59b-b740-4fff-b662-f7a4beb666b8",
+    "Title": "Book 31",
+    "Author": "Author F",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "9a2b8294-50d0-456f-954b-198063fe94e8",
+    "Title": "Book 32",
+    "Author": "Author G",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "629bcc9e-1531-44b7-b462-31a6d47cc8a0",
+    "Title": "Book 33",
+    "Author": "Author H",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "094309b3-70d8-4efb-bb3d-70ccd0cc3e88",
+    "Title": "Book 34",
+    "Author": "Author I",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "1d03b286-cc4e-43e5-8221-82a64890b29f",
+    "Title": "Book 35",
+    "Author": "Author J",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "4353bd81-25ce-4178-ac4c-259d804cb596",
+    "Title": "Book 36",
+    "Author": "Author K",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "faaf3c84-1bb5-45f0-9cfa-4cba6811ef2d",
+    "Title": "Book 37",
+    "Author": "Author L",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "592cfc2c-d917-42d7-bd19-006029c4f90c",
+    "Title": "Book 38",
+    "Author": "Author M",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "c507bb40-1bc8-4d54-a7f5-128520fc1053",
+    "Title": "Book 39",
+    "Author": "Author N",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d4b5dd24-4626-4ded-a2f2-db356ffce24f",
+    "Title": "Book 40",
+    "Author": "Author O",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "f8b1d2f8-eab1-48aa-a4b0-cf11a5cadb43",
+    "Title": "Book 41",
+    "Author": "Author P",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "e3f355d7-25df-4644-97fd-21da050582c6",
+    "Title": "Book 42",
+    "Author": "Author Q",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "94b284c0-7349-45fa-9fa4-b57244c8bde5",
+    "Title": "Book 43",
+    "Author": "Author R",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "940b4381-9d73-495e-a256-289dfe16be86",
+    "Title": "Book 44",
+    "Author": "Author S",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "b2936960-f9c3-467f-a97a-af7c142a836e",
+    "Title": "Book 45",
+    "Author": "Author T",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "100013e8-677f-428d-8d89-a5be771ad02d",
+    "Title": "Book 46",
+    "Author": "Author U",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "194f349b-7a62-4a5a-901a-3e7ad6f21bbd",
+    "Title": "Book 47",
+    "Author": "Author V",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "dca89115-8f88-41d7-bdc6-fdd66bc2218e",
+    "Title": "Book 48",
+    "Author": "Author W",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "9f2a3bb5-4892-4d8d-b26a-b4f0a0d5409a",
+    "Title": "Book 49",
+    "Author": "Author X",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "6a74a87e-935f-4736-8c58-7de8b3e1b6f8",
+    "Title": "Book 50",
+    "Author": "Author Y",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "6c98c931-e8cc-45da-a0e0-e30b004785c0",
+    "Title": "Book 51",
+    "Author": "Author Z",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "2bfb4ccf-b890-439b-8cf5-9fef9ad0d75b",
+    "Title": "Book 52",
+    "Author": "Author A",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "727bceb6-0ce5-432c-80de-eefc15287dfd",
+    "Title": "Book 53",
+    "Author": "Author B",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "0ef19295-e8fd-4d44-8679-4e5dceb22245",
+    "Title": "Book 54",
+    "Author": "Author C",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "1f995b93-02a6-4073-af74-39c245d3c0f5",
+    "Title": "Book 55",
+    "Author": "Author D",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "0636d368-c6ad-4472-a308-a3a6a697c067",
+    "Title": "Book 56",
+    "Author": "Author E",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "42d21058-d464-4cf2-9c9a-128e7495c487",
+    "Title": "Book 57",
+    "Author": "Author F",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "912043fb-78ef-413c-a521-c50dd5090063",
+    "Title": "Book 58",
+    "Author": "Author G",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d97e66d6-0c5a-4fb3-9795-a112232fc6a0",
+    "Title": "Book 59",
+    "Author": "Author H",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "5cfa76ac-fb73-49c7-9bf4-71f5c24a5f86",
+    "Title": "Book 60",
+    "Author": "Author I",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "9472f6ae-d207-4d9c-816c-ca032c78bcf9",
+    "Title": "Book 61",
+    "Author": "Author J",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "dfc81e2b-b3f8-4b25-8141-06580eb8a250",
+    "Title": "Book 62",
+    "Author": "Author K",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "249465cd-d7f6-4849-b444-1dc1b0c51f82",
+    "Title": "Book 63",
+    "Author": "Author L",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "e941b80a-ab04-4c7e-a0c8-ab590372c50c",
+    "Title": "Book 64",
+    "Author": "Author M",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "3bf259b8-02ea-43cd-83f0-51e832ccad5c",
+    "Title": "Book 65",
+    "Author": "Author N",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "24ba9a3d-4910-4b17-b692-f126ca84e629",
+    "Title": "Book 66",
+    "Author": "Author O",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d5f7c0a8-5332-4534-a257-fedfae9299a1",
+    "Title": "Book 67",
+    "Author": "Author P",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "65a67599-d9cc-4093-8d4a-e0f4bbb91fb5",
+    "Title": "Book 68",
+    "Author": "Author Q",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "27dcdbf8-3fac-4cd0-8875-d9571f6052f0",
+    "Title": "Book 69",
+    "Author": "Author R",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "b12992fc-22cd-4cce-ba24-e0a13b5eb96e",
+    "Title": "Book 70",
+    "Author": "Author S",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "330be8a5-8998-49f3-a874-e039908d820d",
+    "Title": "Book 71",
+    "Author": "Author T",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "2743ae81-7ad1-4bc0-89f8-9d2b17727a72",
+    "Title": "Book 72",
+    "Author": "Author U",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "b987775a-78f7-4ff6-b8bd-7857d1cc33f3",
+    "Title": "Book 73",
+    "Author": "Author V",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "e9567155-27b3-46b3-9760-5b256c3f3ae6",
+    "Title": "Book 74",
+    "Author": "Author W",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "6c7eab9b-07c5-4911-b5f8-1d9084ce371a",
+    "Title": "Book 75",
+    "Author": "Author X",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "ef2b61ad-1e20-46c7-adbb-3fb8e38594a6",
+    "Title": "Book 76",
+    "Author": "Author Y",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "d1e6ea52-d3a9-46f3-b558-351c8e407bfb",
+    "Title": "Book 77",
+    "Author": "Author Z",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "4e8131b7-bd48-40f4-9404-308b04212a76",
+    "Title": "Book 78",
+    "Author": "Author A",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "acb4ae9f-54bb-4259-b8d1-0b561a662110",
+    "Title": "Book 79",
+    "Author": "Author B",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "186cefa2-5e08-4b80-8054-203d389c17de",
+    "Title": "Book 80",
+    "Author": "Author C",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "64ce4c37-eccc-4847-98be-90fed0147cfb",
+    "Title": "Book 81",
+    "Author": "Author D",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "56708a4d-3a4d-4e80-981d-97b0a188ed32",
+    "Title": "Book 82",
+    "Author": "Author E",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "36abb635-0b62-4a30-8b94-01f66a5ff9d2",
+    "Title": "Book 83",
+    "Author": "Author F",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "ace26d3f-4c51-428d-9e26-3500672348c9",
+    "Title": "Book 84",
+    "Author": "Author G",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "3b9d30a6-4ff4-40b2-8779-ef0fe15cc64a",
+    "Title": "Book 85",
+    "Author": "Author H",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "fe04f32b-37eb-4986-b2cc-71c4df52d27b",
+    "Title": "Book 86",
+    "Author": "Author I",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "8aff19c2-37eb-48b1-a2e0-85c2e0ec4749",
+    "Title": "Book 87",
+    "Author": "Author J",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "1a42ed5b-85f9-490c-b968-730c8d054d21",
+    "Title": "Book 88",
+    "Author": "Author K",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "e19a281a-b4ed-4ea5-ab3e-9b488b7afd72",
+    "Title": "Book 89",
+    "Author": "Author L",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "77bf908b-7917-4fea-ba75-92102cf6d279",
+    "Title": "Book 90",
+    "Author": "Author M",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "54998fb1-62e4-4941-8bda-38205e38f3e2",
+    "Title": "Book 91",
+    "Author": "Author N",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "93f81d02-db42-4591-874c-85d959534d60",
+    "Title": "Book 92",
+    "Author": "Author O",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "245567c0-175e-48ee-85df-943afcdfab2f",
+    "Title": "Book 93",
+    "Author": "Author P",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "08420844-42b7-4e98-a61f-ba09f9b8e658",
+    "Title": "Book 94",
+    "Author": "Author Q",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "aba8c4bf-6fc5-43f3-a13e-68c939ec70b3",
+    "Title": "Book 95",
+    "Author": "Author R",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "bfb001a9-7dd0-4865-b7ca-1cbd384f483c",
+    "Title": "Book 96",
+    "Author": "Author S",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "690210d4-e999-4341-aa15-73e0e2d082e4",
+    "Title": "Book 97",
+    "Author": "Author T",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "5dcb9e5f-f7fc-485b-b5d1-a6dea4e0e812",
+    "Title": "Book 98",
+    "Author": "Author U",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "04deebac-5158-4712-9a6a-d6cb20fe6928",
+    "Title": "Book 99",
+    "Author": "Author V",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  },
+  {
+    "Id": "1d4ce8c7-33bb-412c-8e02-52502997d5a0",
+    "Title": "Book 100",
+    "Author": "Author W",
+    "Quantity": 1,
+    "Published": "2025-05-06T00:00:00+03:00",
+    "Status": "Available",
+    "ImagePath": "C:\\Users\\useR\\Downloads\\IMG_20250505_194406.jpg"
+  }
+]

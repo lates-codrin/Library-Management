@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Models
+  commentId: N:Library_Management_System.Models
+  id: Library_Management_System.Models
+  children:
+  - Library_Management_System.Models.AppConfig
+  - Library_Management_System.Models.Book
+  - Library_Management_System.Models.DataColor
+  - Library_Management_System.Models.LendBook
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Models
+  nameWithType: Library_Management_System.Models
+  fullName: Library_Management_System.Models
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Models.AppConfig
+  commentId: T:Library_Management_System.Models.AppConfig
+  href: Library_Management_System.Models.AppConfig.html
+  name: AppConfig
+  nameWithType: AppConfig
+  fullName: Library_Management_System.Models.AppConfig
+- uid: Library_Management_System.Models.Book
+  commentId: T:Library_Management_System.Models.Book
+  parent: Library_Management_System.Models
+  href: Library_Management_System.Models.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: Library_Management_System.Models.Book
+- uid: Library_Management_System.Models.DataColor
+  commentId: T:Library_Management_System.Models.DataColor
+  href: Library_Management_System.Models.DataColor.html
+  name: DataColor
+  nameWithType: DataColor
+  fullName: Library_Management_System.Models.DataColor
+- uid: Library_Management_System.Models.LendBook
+  commentId: T:Library_Management_System.Models.LendBook
+  parent: Library_Management_System.Models
+  href: Library_Management_System.Models.LendBook.html
+  name: LendBook
+  nameWithType: LendBook
+  fullName: Library_Management_System.Models.LendBook
+- uid: Library_Management_System.Models
+  commentId: N:Library_Management_System.Models
+  href: Library_Management_System.html
+  name: Library_Management_System.Models
+  nameWithType: Library_Management_System.Models
+  fullName: Library_Management_System.Models
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Models
+    name: Models
+    href: Library_Management_System.Models.html

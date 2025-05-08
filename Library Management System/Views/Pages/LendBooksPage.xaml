@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="Library_Management_System.Views.Pages.LendBooksPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Library_Management_System.ViewModels.Pages"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="LendBooksPage"
+    d:DataContext="{d:DesignInstance vm:LendBooksViewModel, IsDesignTimeCreatable=True}"
+    mc:Ignorable="d"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DataGrid ItemsSource="{Binding ViewModel.LendBooks}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectedItem="{Binding ViewModel.SelectedLendBook}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Contact" Binding="{Binding Contact}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" />
+                <DataGridTextColumn Header="Author" Binding="{Binding Author}" />
+                <DataGridTextColumn Header="Date Issue" Binding="{Binding DateIssue}" />
+                <DataGridTextColumn Header="Date Return" Binding="{Binding DateReturn}" />
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Center">
+                <Label Content="Name" Width="52" />
+                <TextBox Width="149" Text="{Binding ViewModel.Name, Mode=TwoWay}" />
+                <Label Content="Contact" Width="54" />
+                <TextBox Width="150" Text="{Binding ViewModel.Contact, Mode=TwoWay}" />
+                <Label Content="Email" Width="60" />
+                <TextBox Width="166" Text="{Binding ViewModel.Email, Mode=TwoWay}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Center">
+                <Label Content="Book" Width="52" />
+                <TextBox Width="150" Text="{Binding ViewModel.BookTitle, Mode=TwoWay}" />
+                <Label Content="Author" Width="52" />
+                <TextBox Width="150" Text="{Binding ViewModel.Author, Mode=TwoWay}" />
+                <DatePicker SelectedDate="{Binding ViewModel.DateIssue, Mode=TwoWay}" Width="151" />
+                <DatePicker SelectedDate="{Binding ViewModel.DateReturn, Mode=TwoWay}" Width="149" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                <TextBlock Text="Status options" VerticalAlignment="Center" Margin="0,0,10,0" />
+                <ComboBox Width="150"
+                  ItemsSource="{Binding ViewModel.StatusOptions}"
+                  SelectedItem="{Binding ViewModel.Status, Mode=TwoWay}" />
+            </StackPanel>
+
+            <TextBlock Text="{Binding ViewModel.FormMessage}" Foreground="Red" Margin="0,10" HorizontalAlignment="Center" />
+
+            <StackPanel Orientation="Horizontal" Margin="0,10" HorizontalAlignment="Center">
+                <Button Content="Add" Command="{Binding ViewModel.AddCommand}" Margin="5,0" />
+                <Button Content="Update" Command="{Binding ViewModel.UpdateCommand}" Margin="5,0" />
+                <Button Content="Delete" Command="{Binding ViewModel.DeleteCommand}" Margin="5,0" />
+                <Button Content="Clear" Command="{Binding ViewModel.ClearFormCommand}" Margin="5,0" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

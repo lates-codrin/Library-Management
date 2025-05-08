@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Services
+  commentId: N:Library_Management_System.Services
+  id: Library_Management_System.Services
+  children:
+  - Library_Management_System.Services.ApplicationHostService
+  - Library_Management_System.Services.SettingsManager
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Services
+  nameWithType: Library_Management_System.Services
+  fullName: Library_Management_System.Services
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Services.ApplicationHostService
+  commentId: T:Library_Management_System.Services.ApplicationHostService
+  href: Library_Management_System.Services.ApplicationHostService.html
+  name: ApplicationHostService
+  nameWithType: ApplicationHostService
+  fullName: Library_Management_System.Services.ApplicationHostService
+- uid: Library_Management_System.Services.SettingsManager
+  commentId: T:Library_Management_System.Services.SettingsManager
+  href: Library_Management_System.Services.SettingsManager.html
+  name: SettingsManager
+  nameWithType: SettingsManager
+  fullName: Library_Management_System.Services.SettingsManager

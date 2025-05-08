@@ -1,0 +1,686 @@
+{
+  "source_base_path": "C:/Users/useR/Desktop/Library-Management-System",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.App",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.App.yml\" sourcestartlinenumber=\"1\">Interaction logic for App.xaml</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.BusinessLogic.LendManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.BusinessLogic.LendManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.BusinessLogic.LendManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.BusinessLogic.LibraryManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.BusinessLogic.LibraryManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.BusinessLogic.LibraryManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.BusinessLogic.RecommendationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.BusinessLogic.RecommendationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.BusinessLogic.RecommendationService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.BusinessLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.BusinessLogic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.BusinessLogic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Data.BookRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Data.BookRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Data.BookRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Data.IBookRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Data.IBookRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Data.IBookRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Data.ILendBookRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Data.ILendBookRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Data.ILendBookRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Models.AppConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Models.AppConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Models.AppConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Models.Book.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Models.Book.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Models.Book",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Models.DataColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Models.DataColor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Models.DataColor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Models.LendBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Models.LendBook.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Models.LendBook",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Models.LendBook.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Resources.Translations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Resources.Translations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Resources.Translations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Resources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Resources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Services.ApplicationHostService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Services.ApplicationHostService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Services.ApplicationHostService",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Services.ApplicationHostService.yml\" sourcestartlinenumber=\"1\">Managed host of the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Services.SettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Services.SettingsManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Services.SettingsManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.BrowseBooksViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.BrowseBooksViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.ConnectBotViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.ConnectBotViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.ConnectBotViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.ConnectBotViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.DashboardViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.DashboardViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.DashboardViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.DashboardViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.DataViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.DataViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.DataViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.DataViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.LendBooksViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.LendBooksViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.LendBooksViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.LendBooksViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.ManageBooksViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.ManageBooksViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.ManageBooksViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.ManageBooksViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.OpenAIKeysViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.SettingsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.SettingsViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages.SettingsViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Pages.SettingsViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Pages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Pages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Windows.MainWindowViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Windows.MainWindowViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Windows.MainWindowViewModel",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.ViewModels.Windows.MainWindowViewModel.yml\" sourcestartlinenumber=\"1\">A base class for objects of which the properties must be observable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.ViewModels.Windows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.ViewModels.Windows.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.ViewModels.Windows",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.BrowseBooksPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.BrowseBooksPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.BrowseBooksPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.BrowseBooksPage.yml\" sourcestartlinenumber=\"1\">BrowseBooksPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.ConnectBotPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.ConnectBotPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.ConnectBotPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.ConnectBotPage.yml\" sourcestartlinenumber=\"1\">ConnectBotPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.DashboardPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.DashboardPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.DashboardPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.DashboardPage.yml\" sourcestartlinenumber=\"1\">DashboardPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.DataPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.DataPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.DataPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.DataPage.yml\" sourcestartlinenumber=\"1\">DataPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.LendBooksPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.LendBooksPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.LendBooksPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.LendBooksPage.yml\" sourcestartlinenumber=\"1\">LendBooksPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.ManageBooksPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.ManageBooksPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.ManageBooksPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.ManageBooksPage.yml\" sourcestartlinenumber=\"1\">ManageBooksPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.OpenAIKeysPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.OpenAIKeysPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.OpenAIKeysPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.OpenAIKeysPage.yml\" sourcestartlinenumber=\"1\">OpenAIKeysPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.SettingsPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.SettingsPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages.SettingsPage",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Pages.SettingsPage.yml\" sourcestartlinenumber=\"1\">SettingsPage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Pages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Pages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Windows.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Windows.MainWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Windows.MainWindow",
+      "Summary": "<p sourcefile=\"api/Library_Management_System.Views.Windows.MainWindow.yml\" sourcestartlinenumber=\"1\">MainWindow</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.Views.Windows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.Views.Windows.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System.Views.Windows",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Library_Management_System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Library_Management_System.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Library_Management_System",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System
+  commentId: N:Library_Management_System
+  id: Library_Management_System
+  children:
+  - Library_Management_System.App
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System
+  nameWithType: Library_Management_System
+  fullName: Library_Management_System
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.App
+  commentId: T:Library_Management_System.App
+  href: Library_Management_System.App.html
+  name: App
+  nameWithType: App
+  fullName: Library_Management_System.App

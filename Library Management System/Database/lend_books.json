@@ -1,0 +1,13 @@
+[
+  {
+    "IssueId": "ecf5e9e0-d028-4c84-9dcb-d58e5b8423f0",
+    "Name": "John Doess",
+    "Contact": "1234567890",
+    "Email": "john@example.com",
+    "BookTitle": "Book A",
+    "Author": "Author A",
+    "DateIssue": "2024-05-01T00:00:00",
+    "DateReturn": "2024-06-01T00:00:00",
+    "Status": "Issued"
+  }
+]

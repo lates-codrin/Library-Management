@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.BusinessLogic
+  commentId: N:Library_Management_System.BusinessLogic
+  id: Library_Management_System.BusinessLogic
+  children:
+  - Library_Management_System.BusinessLogic.LendManager
+  - Library_Management_System.BusinessLogic.LibraryManager
+  - Library_Management_System.BusinessLogic.RecommendationService
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.BusinessLogic
+  nameWithType: Library_Management_System.BusinessLogic
+  fullName: Library_Management_System.BusinessLogic
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.BusinessLogic.LendManager
+  commentId: T:Library_Management_System.BusinessLogic.LendManager
+  parent: Library_Management_System.BusinessLogic
+  href: Library_Management_System.BusinessLogic.LendManager.html
+  name: LendManager
+  nameWithType: LendManager
+  fullName: Library_Management_System.BusinessLogic.LendManager
+- uid: Library_Management_System.BusinessLogic.LibraryManager
+  commentId: T:Library_Management_System.BusinessLogic.LibraryManager
+  parent: Library_Management_System.BusinessLogic
+  href: Library_Management_System.BusinessLogic.LibraryManager.html
+  name: LibraryManager
+  nameWithType: LibraryManager
+  fullName: Library_Management_System.BusinessLogic.LibraryManager
+- uid: Library_Management_System.BusinessLogic.RecommendationService
+  commentId: T:Library_Management_System.BusinessLogic.RecommendationService
+  href: Library_Management_System.BusinessLogic.RecommendationService.html
+  name: RecommendationService
+  nameWithType: RecommendationService
+  fullName: Library_Management_System.BusinessLogic.RecommendationService
+- uid: Library_Management_System.BusinessLogic
+  commentId: N:Library_Management_System.BusinessLogic
+  href: Library_Management_System.html
+  name: Library_Management_System.BusinessLogic
+  nameWithType: Library_Management_System.BusinessLogic
+  fullName: Library_Management_System.BusinessLogic
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.BusinessLogic
+    name: BusinessLogic
+    href: Library_Management_System.BusinessLogic.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.BusinessLogic
+    name: BusinessLogic
+    href: Library_Management_System.BusinessLogic.html

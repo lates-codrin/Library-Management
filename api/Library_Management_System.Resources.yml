@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Resources
+  commentId: N:Library_Management_System.Resources
+  id: Library_Management_System.Resources
+  children:
+  - Library_Management_System.Resources.Translations
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Resources
+  nameWithType: Library_Management_System.Resources
+  fullName: Library_Management_System.Resources
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Resources.Translations
+  commentId: T:Library_Management_System.Resources.Translations
+  href: Library_Management_System.Resources.Translations.html
+  name: Translations
+  nameWithType: Translations
+  fullName: Library_Management_System.Resources.Translations

@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Views.Pages
+  commentId: N:Library_Management_System.Views.Pages
+  id: Library_Management_System.Views.Pages
+  children:
+  - Library_Management_System.Views.Pages.BrowseBooksPage
+  - Library_Management_System.Views.Pages.ConnectBotPage
+  - Library_Management_System.Views.Pages.DashboardPage
+  - Library_Management_System.Views.Pages.DataPage
+  - Library_Management_System.Views.Pages.LendBooksPage
+  - Library_Management_System.Views.Pages.ManageBooksPage
+  - Library_Management_System.Views.Pages.OpenAIKeysPage
+  - Library_Management_System.Views.Pages.SettingsPage
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Views.Pages
+  nameWithType: Library_Management_System.Views.Pages
+  fullName: Library_Management_System.Views.Pages
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Views.Pages.BrowseBooksPage
+  commentId: T:Library_Management_System.Views.Pages.BrowseBooksPage
+  href: Library_Management_System.Views.Pages.BrowseBooksPage.html
+  name: BrowseBooksPage
+  nameWithType: BrowseBooksPage
+  fullName: Library_Management_System.Views.Pages.BrowseBooksPage
+- uid: Library_Management_System.Views.Pages.ConnectBotPage
+  commentId: T:Library_Management_System.Views.Pages.ConnectBotPage
+  href: Library_Management_System.Views.Pages.ConnectBotPage.html
+  name: ConnectBotPage
+  nameWithType: ConnectBotPage
+  fullName: Library_Management_System.Views.Pages.ConnectBotPage
+- uid: Library_Management_System.Views.Pages.DashboardPage
+  commentId: T:Library_Management_System.Views.Pages.DashboardPage
+  href: Library_Management_System.Views.Pages.DashboardPage.html
+  name: DashboardPage
+  nameWithType: DashboardPage
+  fullName: Library_Management_System.Views.Pages.DashboardPage
+- uid: Library_Management_System.Views.Pages.DataPage
+  commentId: T:Library_Management_System.Views.Pages.DataPage
+  href: Library_Management_System.Views.Pages.DataPage.html
+  name: DataPage
+  nameWithType: DataPage
+  fullName: Library_Management_System.Views.Pages.DataPage
+- uid: Library_Management_System.Views.Pages.LendBooksPage
+  commentId: T:Library_Management_System.Views.Pages.LendBooksPage
+  href: Library_Management_System.Views.Pages.LendBooksPage.html
+  name: LendBooksPage
+  nameWithType: LendBooksPage
+  fullName: Library_Management_System.Views.Pages.LendBooksPage
+- uid: Library_Management_System.Views.Pages.ManageBooksPage
+  commentId: T:Library_Management_System.Views.Pages.ManageBooksPage
+  href: Library_Management_System.Views.Pages.ManageBooksPage.html
+  name: ManageBooksPage
+  nameWithType: ManageBooksPage
+  fullName: Library_Management_System.Views.Pages.ManageBooksPage
+- uid: Library_Management_System.Views.Pages.OpenAIKeysPage
+  commentId: T:Library_Management_System.Views.Pages.OpenAIKeysPage
+  href: Library_Management_System.Views.Pages.OpenAIKeysPage.html
+  name: OpenAIKeysPage
+  nameWithType: OpenAIKeysPage
+  fullName: Library_Management_System.Views.Pages.OpenAIKeysPage
+- uid: Library_Management_System.Views.Pages.SettingsPage
+  commentId: T:Library_Management_System.Views.Pages.SettingsPage
+  href: Library_Management_System.Views.Pages.SettingsPage.html
+  name: SettingsPage
+  nameWithType: SettingsPage
+  fullName: Library_Management_System.Views.Pages.SettingsPage

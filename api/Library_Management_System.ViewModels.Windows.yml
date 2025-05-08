@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.ViewModels.Windows
+  commentId: N:Library_Management_System.ViewModels.Windows
+  id: Library_Management_System.ViewModels.Windows
+  children:
+  - Library_Management_System.ViewModels.Windows.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.ViewModels.Windows
+  nameWithType: Library_Management_System.ViewModels.Windows
+  fullName: Library_Management_System.ViewModels.Windows
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.ViewModels.Windows.MainWindowViewModel
+  commentId: T:Library_Management_System.ViewModels.Windows.MainWindowViewModel
+  parent: Library_Management_System.ViewModels.Windows
+  href: Library_Management_System.ViewModels.Windows.MainWindowViewModel.html
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: Library_Management_System.ViewModels.Windows.MainWindowViewModel
+- uid: Library_Management_System.ViewModels.Windows
+  commentId: N:Library_Management_System.ViewModels.Windows
+  href: Library_Management_System.html
+  name: Library_Management_System.ViewModels.Windows
+  nameWithType: Library_Management_System.ViewModels.Windows
+  fullName: Library_Management_System.ViewModels.Windows
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.ViewModels
+    name: ViewModels
+    href: Library_Management_System.ViewModels.html
+  - name: .
+  - uid: Library_Management_System.ViewModels.Windows
+    name: Windows
+    href: Library_Management_System.ViewModels.Windows.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.ViewModels
+    name: ViewModels
+    href: Library_Management_System.ViewModels.html
+  - name: .
+  - uid: Library_Management_System.ViewModels.Windows
+    name: Windows
+    href: Library_Management_System.ViewModels.Windows.html

@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="Library_Management_System.Views.Pages.BrowseBooksPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Library_Management_System.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:models="clr-namespace:Library_Management_System.Models"
+    Title="BrowseBooksPage"
+    d:DataContext="{d:DesignInstance local:BrowseBooksPage, IsDesignTimeCreatable=False}"
+    mc:Ignorable="d"
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="20">
+            <Button Content="Refresh Books"
+                    Command="{Binding ViewModel.ReloadBooksCommand}"
+                    HorizontalAlignment="Right"
+                    Width="150"
+                    Margin="0,0,0,5" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Search by name, author..." VerticalAlignment="Center" Margin="0,0,10,0" />
+                <TextBox x:Name="SearchBox"
+                         Width="250"
+                         Height="30"
+                         Text="{Binding ViewModel.SearchQuery, Mode=TwoWay}"
+                         VerticalContentAlignment="Center" />
+                <Button Content="Search"
+                        Command="{Binding ViewModel.SearchCommand}"
+                        Width="70"
+                        Margin="5,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid HorizontalAlignment="Center">
+                <ui:VirtualizingItemsControl
+            ItemsSource="{Binding ViewModel.Books}"
+            VirtualizingPanel.CacheLengthUnit="Item">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel IsItemsHost="True" Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type models:Book}">
+                            <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Width="150" Height="250">
+                                <StackPanel>
+                                    <Image Source="{Binding ImagePath}" Width="150" Height="150" Stretch="UniformToFill" />
+                                    <TextBlock Text="{Binding Title}" FontWeight="Bold" HorizontalAlignment="Center" Margin="5" />
+                                    <TextBlock Text="{Binding Author}" HorizontalAlignment="Center" Margin="5" />
+                                    <TextBlock Text="{Binding Status}" HorizontalAlignment="Center" Margin="5" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ui:VirtualizingItemsControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

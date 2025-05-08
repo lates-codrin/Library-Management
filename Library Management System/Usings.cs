@@ -1,0 +1,9 @@
+﻿global using System;
+global using System.Windows;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using LiveChartsCore;
+global using LiveChartsCore.SkiaSharpView;
+global using LiveChartsCore.SkiaSharpView.Painting;
+global using Library_Management_System.BusinessLogic;
+global using SkiaSharp;

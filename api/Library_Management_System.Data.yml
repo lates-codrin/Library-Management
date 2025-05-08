@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Library_Management_System.Data
+  commentId: N:Library_Management_System.Data
+  id: Library_Management_System.Data
+  children:
+  - Library_Management_System.Data.BookRepository
+  - Library_Management_System.Data.IBookRepository
+  - Library_Management_System.Data.ILendBookRepository
+  langs:
+  - csharp
+  - vb
+  name: Library_Management_System.Data
+  nameWithType: Library_Management_System.Data
+  fullName: Library_Management_System.Data
+  type: Namespace
+  assemblies:
+  - Library Management System
+references:
+- uid: Library_Management_System.Data.BookRepository
+  commentId: T:Library_Management_System.Data.BookRepository
+  href: Library_Management_System.Data.BookRepository.html
+  name: BookRepository
+  nameWithType: BookRepository
+  fullName: Library_Management_System.Data.BookRepository
+- uid: Library_Management_System.Data.IBookRepository
+  commentId: T:Library_Management_System.Data.IBookRepository
+  parent: Library_Management_System.Data
+  href: Library_Management_System.Data.IBookRepository.html
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: Library_Management_System.Data.IBookRepository
+- uid: Library_Management_System.Data.ILendBookRepository
+  commentId: T:Library_Management_System.Data.ILendBookRepository
+  parent: Library_Management_System.Data
+  href: Library_Management_System.Data.ILendBookRepository.html
+  name: ILendBookRepository
+  nameWithType: ILendBookRepository
+  fullName: Library_Management_System.Data.ILendBookRepository
+- uid: Library_Management_System.Data
+  commentId: N:Library_Management_System.Data
+  href: Library_Management_System.html
+  name: Library_Management_System.Data
+  nameWithType: Library_Management_System.Data
+  fullName: Library_Management_System.Data
+  spec.csharp:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
+  spec.vb:
+  - uid: Library_Management_System
+    name: Library_Management_System
+    href: Library_Management_System.html
+  - name: .
+  - uid: Library_Management_System.Data
+    name: Data
+    href: Library_Management_System.Data.html
