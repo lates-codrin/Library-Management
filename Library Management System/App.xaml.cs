@@ -79,7 +79,14 @@ namespace Library_Management_System
         /// </summary>
         private async void OnStartup(object sender, StartupEventArgs e)
         {
-            await _host.StartAsync();
+            var splash = new SplashScreenWindow();
+            splash.Show();
+
+            var startHostTask = _host.StartAsync();
+            await Task.WhenAny(startHostTask, Task.Delay(5000));
+            await startHostTask;
+
+            splash.Close();
         }
 
         /// <summary>
