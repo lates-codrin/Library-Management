@@ -3,11 +3,20 @@ using System.Collections.ObjectModel;
 
 namespace Library_Management_System.ViewModels.Pages
 {
+    /// <summary>
+    /// ViewModel for managing the lending of books in the library.
+    /// Handles CRUD operations on lend records.
+    /// </summary>
     public partial class LendBooksViewModel : ObservableObject
     {
         private readonly LendManager _lendManager;
         private readonly LibraryManager _libraryManager;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LendBooksViewModel"/> class.
+        /// </summary>
+        /// <param name="lendManager">The instance of <see cref="LendManager"/> to manage lending operations.</param>
+        /// <param name="libraryManager">The instance of <see cref="LibraryManager"/> to manage books inventory.</param>
         public LendBooksViewModel(LendManager lendManager, LibraryManager libraryManager)
         {
             _lendManager = lendManager;
@@ -16,24 +25,54 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
+        /// <summary>
+        /// Gets the collection of currently lent books.
+        /// </summary>
         public ObservableCollection<LendBook> LendBooks { get; }
 
-        [ObservableProperty] private LendBook selectedLendBook;
-        [ObservableProperty] private string name;
-        [ObservableProperty] private string contact;
-        [ObservableProperty] private string email;
-        [ObservableProperty] private string bookTitle;
-        [ObservableProperty] private string author;
-        [ObservableProperty] private DateTime dateIssue = DateTime.Today;
-        [ObservableProperty] private DateTime dateReturn = DateTime.Today.AddDays(7);
-        [ObservableProperty] private BookStatus status = BookStatus.Issued;
-        [ObservableProperty] private string formMessage;
+        [ObservableProperty]
+        private LendBook selectedLendBook;
 
+        [ObservableProperty]
+        private string name;
+
+        [ObservableProperty]
+        private string contact;
+
+        [ObservableProperty]
+        private string email;
+
+        [ObservableProperty]
+        private string bookTitle;
+
+        [ObservableProperty]
+        private string author;
+
+        [ObservableProperty]
+        private DateTime dateIssue = DateTime.Today;
+
+        [ObservableProperty]
+        private DateTime dateReturn = DateTime.Today.AddDays(7);
+
+        [ObservableProperty]
+        private BookStatus status = BookStatus.Issued;
+
+        [ObservableProperty]
+        private string formMessage;
+
+        /// <summary>
+        /// Gets the available status options for the books/
+        /// </summary>
         public ObservableCollection<BookStatus> StatusOptions { get; } = new()
         {
             BookStatus.Issued, BookStatus.Returned
         };
 
+        /// <summary>
+        /// Validates the email format.
+        /// </summary>
+        /// <param name="email">The email address to validate.</param>
+        /// <returns>True if the email is valid, otherwise false.</returns>
         private bool IsValidEmail(string email)
         {
             try
@@ -47,6 +86,11 @@ namespace Library_Management_System.ViewModels.Pages
             }
         }
 
+        /// <summary>
+        /// Validates the phone number format.
+        /// </summary>
+        /// <param name="phoneNumber">The phone number to validate.</param>
+        /// <returns>True if the phone number is valid, otherwise false.</returns>
         private bool IsValidPhoneNumber(string phoneNumber)
         {
             if (string.IsNullOrWhiteSpace(phoneNumber))
@@ -56,7 +100,9 @@ namespace Library_Management_System.ViewModels.Pages
             return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, pattern);
         }
 
-
+        /// <summary>
+        /// Command to add a new lending record after validating the form.
+        /// </summary>
         [RelayCommand]
         private void Add()
         {
@@ -94,7 +140,6 @@ namespace Library_Management_System.ViewModels.Pages
                                   && l.Author.Equals(Author, StringComparison.OrdinalIgnoreCase)
                                   && l.Email.Equals(Email, StringComparison.OrdinalIgnoreCase)
                                   && l.Status != BookStatus.Returned);
-
 
             if (existingLend != null)
             {
@@ -140,6 +185,9 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
+        /// <summary>
+        /// Command to update an existing lending record.
+        /// </summary>
         [RelayCommand]
         private void Update()
         {
@@ -174,7 +222,6 @@ namespace Library_Management_System.ViewModels.Pages
                 return;
             }
 
-
             SelectedLendBook.Name = Name;
             SelectedLendBook.Contact = Contact;
             SelectedLendBook.Email = Email;
@@ -183,13 +230,16 @@ namespace Library_Management_System.ViewModels.Pages
             SelectedLendBook.DateIssue = DateIssue;
             SelectedLendBook.DateReturn = DateReturn;
             SelectedLendBook.Status = Status;
-            
+
             _lendManager.UpdateLendBook(SelectedLendBook);
             FormMessage = "Lending record updated successfully.";
             Refresh();
             _libraryManager.NotifyBooksStatusChanged();
         }
 
+        /// <summary>
+        /// Command to delete the selected lending record.
+        /// </summary>
         [RelayCommand]
         private void Delete()
         {
@@ -199,8 +249,6 @@ namespace Library_Management_System.ViewModels.Pages
                 .FirstOrDefault(b => b.Title.Equals(SelectedLendBook.BookTitle, StringComparison.OrdinalIgnoreCase)
                                   && b.Author.Equals(SelectedLendBook.Author, StringComparison.OrdinalIgnoreCase));
 
-           
-
             _lendManager.DeleteLendBook(SelectedLendBook);
             LendBooks.Remove(SelectedLendBook);
 
@@ -209,8 +257,9 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
-
-
+        /// <summary>
+        /// Clears the form fields, resetting them to their default values.
+        /// </summary>
         [RelayCommand]
         private void ClearForm()
         {
@@ -225,7 +274,9 @@ namespace Library_Management_System.ViewModels.Pages
             Status = BookStatus.Issued;
         }
 
-
+        /// <summary>
+        /// Updates the form fields when the selected lending record changes.
+        /// </summary>
         partial void OnSelectedLendBookChanged(LendBook value)
         {
             if (value != null)
@@ -237,11 +288,13 @@ namespace Library_Management_System.ViewModels.Pages
                 Author = value.Author;
                 DateIssue = value.DateIssue;
                 DateReturn = value.DateReturn;
-                Status = value.Status; 
+                Status = value.Status;
             }
         }
 
-
+        /// <summary>
+        /// Refreshes the lending records list by reloading the data from the LendManager.
+        /// </summary>
         private void Refresh()
         {
             LendBooks.Clear();

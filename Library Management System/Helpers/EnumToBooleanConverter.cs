@@ -2,6 +2,9 @@
 using System.Windows.Data;
 using Wpf.Ui.Appearance;
 
+/// <summary>
+/// Unused helper.
+/// </summary>
 namespace Library_Management_System.Helpers
 {
     internal class EnumToBooleanConverter : IValueConverter

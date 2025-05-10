@@ -5,16 +5,24 @@ using System.IO;
 
 namespace Library_Management_System.ViewModels.Pages
 {
+    /// <summary>
+    /// ViewModel for managing books in the library system. 
+    /// Provides functionality to do CRUD operations on book records.
+    /// Handles pagination and image import for books.
+    /// </summary>
     public partial class ManageBooksViewModel : ObservableObject
     {
         private readonly LibraryManager _libraryManager;
         private readonly LendManager _lendManager;
-
         private int _pageNumber = 1;
         private const int PageSize = 12;
         private int _totalBooksCount;
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ManageBooksViewModel"/> class.
+        /// </summary>
+        /// <param name="libraryManager">The <see cref="LibraryManager"/> instance for managing book operations.</param>
+        /// <param name="lendManager">The <see cref="LendManager"/> instance for managing lending operations.</param>
         public ManageBooksViewModel(LibraryManager libraryManager, LendManager lendManager)
         {
             _libraryManager = libraryManager;
@@ -31,6 +39,9 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
+        /// <summary>
+        /// Gets the collection of books currently managed by the system.
+        /// </summary>
         public ObservableCollection<Book> Books { get; }
 
         [ObservableProperty] private Book selectedBook;
@@ -42,6 +53,9 @@ namespace Library_Management_System.ViewModels.Pages
         [ObservableProperty] private FileInfo? formImagePath;
         [ObservableProperty] private bool isLoading;
 
+        /// <summary>
+        /// Gets the available status options for the books.
+        /// </summary>
         public ObservableCollection<BookStatus> StatusOptions { get; } = new()
         {
             BookStatus.Available,
@@ -49,18 +63,39 @@ namespace Library_Management_System.ViewModels.Pages
             BookStatus.Reserved
         };
 
+        /// <summary>
+        /// Command to go to the previous page of books in the pagination system.
+        /// </summary>
         public IRelayCommand PreviousPageCommand { get; }
+
+        /// <summary>
+        /// Command to go to the next page of books in the pagination system.
+        /// </summary>
         public IRelayCommand NextPageCommand { get; }
 
+        /// <summary>
+        /// Determines if the user can go to the previous page.
+        /// </summary>
         public bool CanGoPrevious => _pageNumber > 1;
+
+        /// <summary>
+        /// Determines if the user can go to the next page.
+        /// </summary>
         public bool CanGoNext => _pageNumber * PageSize < _totalBooksCount;
 
+        /// <summary>
+        /// Handler for changes in the quantity of a book in the form.
+        /// </summary>
         partial void OnFormQuantityChanged(int value)
         {
             if (value <= 0)
                 FormStatus = BookStatus.Issued;
         }
 
+        /// <summary>
+        /// Command to add a new book to the library system.
+        /// Validates and has anti duplicates protections.
+        /// </summary>
         [RelayCommand]
         private void Add()
         {
@@ -90,6 +125,10 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
+        /// <summary>
+        /// Command to update an existing book's details in the library system.
+        /// Ensures anti duplication and no negative quantity.
+        /// </summary>
         [RelayCommand]
         private void Update()
         {
@@ -124,6 +163,9 @@ namespace Library_Management_System.ViewModels.Pages
             ReloadBooks();
         }
 
+        /// <summary>
+        /// Command to delete the selected book from the library system.
+        /// </summary>
         [RelayCommand]
         private void Delete()
         {
@@ -134,6 +176,9 @@ namespace Library_Management_System.ViewModels.Pages
             ClearForm();
         }
 
+        /// <summary>
+        /// Command to clear the form inputs and reset the selected book.
+        /// </summary>
         [RelayCommand]
         private void ClearForm()
         {
@@ -146,6 +191,9 @@ namespace Library_Management_System.ViewModels.Pages
             FormImagePath = null;
         }
 
+        /// <summary>
+        /// Command to import an image for the book from the file system.
+        /// </summary>
         [RelayCommand]
         private void ImportImage()
         {
@@ -160,6 +208,11 @@ namespace Library_Management_System.ViewModels.Pages
             }
         }
 
+        /// <summary>
+        /// Command to search for books based on a search query.
+        /// Resets the page number to 1 and reloads the books.
+        /// </summary>
+        /// <param name="query">The search query.</param>
         [RelayCommand]
         private void Search(string query)
         {
@@ -167,6 +220,10 @@ namespace Library_Management_System.ViewModels.Pages
             LoadBooksAsync(query);
         }
 
+        /// <summary>
+        /// Handler for changes in the selected book.
+        /// Populates the form fields with the details of the selected book.
+        /// </summary>
         partial void OnSelectedBookChanged(Book value)
         {
             if (value != null)
@@ -180,6 +237,9 @@ namespace Library_Management_System.ViewModels.Pages
             }
         }
 
+        /// <summary>
+        /// Navigates to the previous page of books if possible.
+        /// </summary>
         private void OnPreviousPage()
         {
             if (!CanGoPrevious) return;
@@ -189,6 +249,9 @@ namespace Library_Management_System.ViewModels.Pages
             NotifyPaginationChanged();
         }
 
+        /// <summary>
+        /// Navigates to the next page of books if possible.
+        /// </summary>
         private void OnNextPage()
         {
             if (!CanGoNext) return;
@@ -198,6 +261,10 @@ namespace Library_Management_System.ViewModels.Pages
             NotifyPaginationChanged();
         }
 
+        /// <summary>
+        /// Notifies the pagination commands that the current state has changed,
+        /// updating their ability to execute.
+        /// </summary>
         private void NotifyPaginationChanged()
         {
             PreviousPageCommand.NotifyCanExecuteChanged();
@@ -206,8 +273,15 @@ namespace Library_Management_System.ViewModels.Pages
             OnPropertyChanged(nameof(CanGoNext));
         }
 
+        /// <summary>
+        /// Reloads the books based on the current search query and page.
+        /// </summary>
         private void ReloadBooks() => LoadBooksAsync();
 
+        /// <summary>
+        /// Loads books from the library, with optional search query and pagination.
+        /// </summary>
+        /// <param name="query">Optional search query to filter books by title or author.</param>
         private async void LoadBooksAsync(string? query = null)
         {
             if (IsLoading) return;

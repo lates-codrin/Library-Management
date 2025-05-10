@@ -3,6 +3,10 @@ using System.Collections.ObjectModel;
 
 namespace Library_Management_System.ViewModels.Pages
 {
+    /// <summary>
+    /// The ViewModel for browsing and searching books in the library.
+    /// Handles book pagination, search functionality, and the display of books.
+    /// </summary>
     public partial class BrowseBooksViewModel : ObservableObject
     {
         private readonly LibraryManager _libraryManager;
@@ -11,9 +15,17 @@ namespace Library_Management_System.ViewModels.Pages
         private const int PageSize = 12;
         private int _totalBooksCount;
 
+        /// <summary>
+        /// Gets the collection of books to be displayed in the view.
+        /// </summary>
         public ObservableCollection<Book> Books { get; }
 
         private string _searchQuery = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the search query used to filter books.
+        /// Reloads the books whenever the search query changes.
+        /// </summary>
         public string SearchQuery
         {
             get => _searchQuery;
@@ -26,16 +38,34 @@ namespace Library_Management_System.ViewModels.Pages
             }
         }
 
+        /// <summary>
+        /// Indicates if the user can navigate to the previous page.
+        /// </summary>
         public bool CanGoPrevious => _pageNumber > 1;
+
+        /// <summary>
+        /// Indicates iff the user can navigate to the next page.
+        /// </summary>
         public bool CanGoNext => _pageNumber * PageSize < _totalBooksCount;
 
+        /// <summary>
+        /// Command for navigating to the previous page of books.
+        /// </summary>
         public IRelayCommand PreviousPageCommand { get; }
+
+        /// <summary>
+        /// Command for navigating to the next page of books.
+        /// </summary>
         public IRelayCommand NextPageCommand { get; }
 
         [ObservableProperty]
         private bool isLoading;
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BrowseBooksViewModel"/> class.
+        /// </summary>
+        /// <param name="libraryManager">The instance of <see cref="LibraryManager"/> for managing books.</param>
+        /// <param name="lendManager">The instance of <see cref="LendManager"/> for managing lending.</param>
         public BrowseBooksViewModel(LibraryManager libraryManager, LendManager lendManager)
         {
             _libraryManager = libraryManager;
@@ -52,6 +82,9 @@ namespace Library_Management_System.ViewModels.Pages
             LoadBooksAsync();
         }
 
+        /// <summary>
+        /// Reloads the books based on the current search query and resets the pagination to the first page.
+        /// </summary>
         [RelayCommand]
         public void ReloadBooks()
         {
@@ -65,6 +98,9 @@ namespace Library_Management_System.ViewModels.Pages
             OnPropertyChanged(nameof(CanGoNext));
         }
 
+        /// <summary>
+        /// Loads books using the library manager.
+        /// </summary>
         private async Task LoadBooksAsync()
         {
             if (IsLoading) return;
@@ -78,7 +114,7 @@ namespace Library_Management_System.ViewModels.Pages
                 Books.Clear();
                 foreach (var book in books)
                 {
-                    if(!Books.Any(b => b.Id == book.Id))
+                    if (!Books.Any(b => b.Id == book.Id))
                         Books.Add(book);
                 }
             }

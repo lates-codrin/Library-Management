@@ -97,9 +97,6 @@ namespace Library_Management_System.BusinessLogic
             );
         }
 
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
@@ -142,6 +139,9 @@ namespace Library_Management_System.BusinessLogic
             return inventoryBook?.Quantity ?? 0;
         }
 
+        /// <summary>
+        /// Retrieves books count by search query with pagination.
+        /// </summary>
         public async Task<int> GetBooksCountBySearchAsync(string searchQuery)
         {
             var books = _bookRepo.GetAllBooks();
