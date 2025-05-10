@@ -3,6 +3,7 @@ using Library_Management_System.Data;
 using Library_Management_System.Models;
 using LibraryManagementSystem.Tests.Helper;
 using Moq;
+using System.IO;
 
 namespace LibraryManagementSystem.Tests
 {
@@ -22,8 +23,8 @@ namespace LibraryManagementSystem.Tests
                     Author = "Jon Skeet",
                     Quantity = 5,
                     Published = new DateTime(2019, 1, 1),
-                    Status = "Available",
-                    ImagePath = "path1.jpg"
+                    Status = BookStatus.Available,
+                    ImagePath = new FileInfo("path1.jpg")
                 },
                 new Book {
                     Id = Guid.NewGuid(),
@@ -31,17 +32,17 @@ namespace LibraryManagementSystem.Tests
                     Author = "Robert C. Martin",
                     Quantity = 3,
                     Published = new DateTime(2008, 1, 1),
-                    Status = "Available",
-                    ImagePath = "path2.jpg"
+                    Status = BookStatus.Available,
+                    ImagePath = new FileInfo("path2.jpg")
                 },
                 new Book {
                     Id = Guid.NewGuid(),
                     Title = "Design Patterns",
                     Author = "Erich Gamma",
-                    Quantity = 2,
+                    Quantity = 3,
                     Published = new DateTime(1994, 1, 1),
-                    Status = "Low Stock",
-                    ImagePath = "path3.jpg"
+                    Status = BookStatus.Available,
+                    ImagePath = new FileInfo("path3.jpg")
                 }
             ];
 
@@ -52,10 +53,8 @@ namespace LibraryManagementSystem.Tests
         [Fact]
         public void GetBooks_ShouldReturnAllBooks()
         {
-            // Act
             var result = _libraryManager.GetBooks();
 
-            // Assert
             Assert.Equal(3, result.Count());
             _mockBookRepo.Verify(r => r.GetAll(), Times.Once);
         }
@@ -63,7 +62,6 @@ namespace LibraryManagementSystem.Tests
         [Fact]
         public void AddBook_ShouldCallRepositoryAdd()
         {
-            // Arrange
             var newBook = new Book
             {
                 Id = Guid.NewGuid(),
@@ -71,14 +69,12 @@ namespace LibraryManagementSystem.Tests
                 Author = "New Author",
                 Quantity = 1,
                 Published = DateTime.Today,
-                Status = "Available",
-                ImagePath = "new.jpg"
+                Status = BookStatus.Available,
+                ImagePath = new FileInfo("new.jpg")
             };
 
-            // Act
             _libraryManager.AddBook(newBook);
 
-            // Assert
             _mockBookRepo.Verify(r => r.Add(newBook), Times.Once);
             Assert.Contains(newBook, _testBooks);
         }
@@ -86,7 +82,6 @@ namespace LibraryManagementSystem.Tests
         [Fact]
         public void UpdateBook_ShouldCallRepositoryUpdate()
         {
-            // Arrange
             var bookToUpdate = _testBooks.First();
             var updatedBook = new Book
             {
@@ -99,10 +94,8 @@ namespace LibraryManagementSystem.Tests
                 ImagePath = bookToUpdate.ImagePath
             };
 
-            // Act
             _libraryManager.UpdateBook(updatedBook);
 
-            // Assert
             _mockBookRepo.Verify(r => r.Update(updatedBook), Times.Once);
             Assert.Equal("Updated Title", _testBooks.First(b => b.Id == bookToUpdate.Id).Title);
         }
@@ -110,13 +103,10 @@ namespace LibraryManagementSystem.Tests
         [Fact]
         public void DeleteBook_ShouldCallRepositoryDelete()
         {
-            // Arrange
             var bookToDelete = _testBooks.First();
 
-            // Act
             _libraryManager.DeleteBook(bookToDelete);
 
-            // Assert
             _mockBookRepo.Verify(r => r.Delete(bookToDelete), Times.Once);
             Assert.DoesNotContain(bookToDelete, _testBooks);
         }
@@ -129,10 +119,8 @@ namespace LibraryManagementSystem.Tests
         [InlineData("nonexistent", 0)]
         public void SearchBooks_ShouldReturnFilteredResults(string query, int expectedCount)
         {
-            // Act
             var result = _libraryManager.SearchBooks(query);
 
-            // Assert
             Assert.Equal(expectedCount, result.Count());
         }
     }
