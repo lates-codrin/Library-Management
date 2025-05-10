@@ -64,7 +64,7 @@ Method 2: Download the source code
 
 Method 3: Download the release
 
-1. Download the release (x64.zip) [here](https://github.com/lates-codrin/Library-Management/releases/tag/v0.0.1-alpha).
+1. Download the release (x64.zip) [here](https://github.com/lates-codrin/Library-Management/releases/tag/v0.0.1-beta) or via the **Download Release** buton above.
 2. Open the .zip > folder > .exe
 3. The application should start as usual
 
