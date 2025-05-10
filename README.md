@@ -83,7 +83,6 @@ Prefer using your personal OpenAI account? Follow these steps:
 4. Copy your key and store it securely.
 5. Open the app, navigate to the settings, paste your key, click Save, then restart the application.
 
-You're now ready to get personalized, intelligent book recommendations!
 ---
 
 # Documentation Website (DocFX)
@@ -118,6 +117,9 @@ docfx --serve
 - **OpenAI GPT API Integration** (for book recommendations)
 - **WPF UI** (via [WPF-UI](https://wpfui.lepo.co/))
   
+<p align="center">
+  <img src="https://i.imgur.com/oLldy3v.png" alt="Schema" style="max-width: 100%; height: auto;" />
+</p>
 
 ---
 
