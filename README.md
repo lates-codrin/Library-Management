@@ -53,8 +53,9 @@ Click the green Start button or press F5.
 Method 2: Download the source code
 1. Download the project from GitHub:
 <p align="center">
-  <img src="https://i.imgur.com/SdtVaA3.png" width="700" height="500"/>
+  <img src="https://i.imgur.com/SdtVaA3.png" alt="Download Image" style="max-width: 100%; height: auto;" />
 </p>
+
 
 2. Open the .zip > first folder > .sln solution
 3. Build & run using the built-in Visual Studio tools
