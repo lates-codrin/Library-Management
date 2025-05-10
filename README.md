@@ -7,15 +7,15 @@
 - You may not commit to this project. If you find something bothering you, please open an issue first! 👍
 - You may run unit tests (made with xUnit) by using the built-in Visual Studio tests explorer.
 
-# 📚 Library Management System (.NET)
 <p align="center">
   <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-beta/Setup.pdf">
     <img src="https://img.shields.io/badge/📄%20Download-Documentation%20PDF-green?style=for-the-badge" alt="Download Documentation PDF"/>
   </a>
   <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-beta/x64.zip">
-    <img src="https://img.shields.io/badge/📦%20Download-Pre--Release-orange?style=for-the-badge" alt="Download Release"/>
+    <img src="https://img.shields.io/badge/📦%20Download-Release-orange?style=for-the-badge" alt="Download Release"/>
   </a>
 </p>
+
 
 
 A desktop-based Library Management System built in C# with a multi-layered architecture. This project is developed as part of the Internship 2025 and aims to provide a user-friendly way for library admins to manage book inventories, issue and return books, and receive book recommendations using AI.
