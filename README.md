@@ -31,7 +31,7 @@ A desktop-based Library Management System built in C# with a multi-layered archi
    If you don't have the SDK installed, Visual Studio will automatically prompt you to install ".NET Desktop Development". Click Install.
 
 ---
-## 🔹 Method 1: Using Visual Studio (Recommended)
+## 🔷 Method 1: Using Visual Studio (Recommended)
 1. Clone the Repository
 2. Open a terminal or Git Bash and run:
 
@@ -50,7 +50,7 @@ Click the green Start button or press F5.
 
 ---
 
-Method 2: Download the source code
+## 🔹 **Method 2: Download the source code**
 1. Download the project from GitHub:
 <p align="center">
   <img src="https://i.imgur.com/SdtVaA3.png" alt="Download Image" style="max-width: 100%; height: auto;" />
@@ -62,7 +62,7 @@ Method 2: Download the source code
 
 ---
 
-Method 3: Download the release
+## 🔹 **Method 3: Download the release**
 
 1. Download the release (x64.zip) [here](https://github.com/lates-codrin/Library-Management/releases/tag/v0.0.1-beta) or via the **Download Release** buton above.
 2. Open the .zip > folder > .exe
