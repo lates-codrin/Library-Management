@@ -15,15 +15,6 @@ namespace Library_Management_System.Views.Pages
 
             InitializeComponent();
         }
-        private void ScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
-        {
-            if (e.VerticalOffset + e.ViewportHeight >= e.ExtentHeight)
-            {
-                if (DataContext is BrowseBooksViewModel vm && vm.LoadMoreBooksCommand.CanExecute(null))
-                {
-                    vm.LoadMoreBooksCommand.Execute(null);
-                }
-            }
-        }
+        
     }
 }

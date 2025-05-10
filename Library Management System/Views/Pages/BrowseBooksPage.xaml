@@ -13,38 +13,42 @@
     Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}">
 
+    <Page.Resources>
+        <local:FileInfoToImagePathConverter x:Key="FileInfoToImagePathConverter"/>
+    </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="20">
+        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="5">
             <Button Content="Refresh Books"
                     Command="{Binding ViewModel.ReloadBooksCommand}"
                     HorizontalAlignment="Right"
                     Width="150"
                     Margin="0,0,0,5" />
-
+            
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock Text="Search by name, author..." VerticalAlignment="Center" Margin="0,0,10,0" />
                 <TextBox x:Name="SearchBox"
                          Width="250"
-                         Height="30"
-                         Text="{Binding ViewModel.SearchQuery, Mode=TwoWay}"
+                         Height="35"
+                         Text="{Binding ViewModel.SearchQuery, UpdateSourceTrigger=PropertyChanged}"
                          VerticalContentAlignment="Center" />
-                <Button Content="Search"
-                        Command="{Binding ViewModel.SearchCommand}"
-                        Width="70"
-                        Margin="5,0,0,0" />
             </StackPanel>
         </StackPanel>
 
         <Grid Grid.Row="1">
             <Grid HorizontalAlignment="Center">
                 <ui:VirtualizingItemsControl
-            ItemsSource="{Binding ViewModel.Books}"
-            VirtualizingPanel.CacheLengthUnit="Item">
+                    ItemsSource="{Binding ViewModel.Books}"
+                    ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    ScrollViewer.CanContentScroll="False"
+                    VirtualizingPanel.CacheLengthUnit="Item">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel IsItemsHost="True" Orientation="Horizontal" />
@@ -53,12 +57,12 @@
 
                     <ItemsControl.ItemTemplate>
                         <DataTemplate DataType="{x:Type models:Book}">
-                            <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Width="150" Height="250">
+                            <Border BorderBrush="Gray" BorderThickness="1" Margin="5" Width="120" Height="200">
                                 <StackPanel>
-                                    <Image Source="{Binding ImagePath}" Width="150" Height="150" Stretch="UniformToFill" />
-                                    <TextBlock Text="{Binding Title}" FontWeight="Bold" HorizontalAlignment="Center" Margin="5" />
-                                    <TextBlock Text="{Binding Author}" HorizontalAlignment="Center" Margin="5" />
-                                    <TextBlock Text="{Binding Status}" HorizontalAlignment="Center" Margin="5" />
+                                    <Image Source="{Binding ImagePath, Converter={StaticResource FileInfoToImagePathConverter}}" Stretch="UniformToFill"/>
+                                    <TextBlock Text="{Binding Title}" FontWeight="Bold" HorizontalAlignment="Center" Margin="1" />
+                                    <TextBlock Text="{Binding Author}" HorizontalAlignment="Center" Margin="1" />
+                                    <TextBlock Text="{Binding Status}" HorizontalAlignment="Center" Margin="1" />
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
@@ -66,5 +70,22 @@
                 </ui:VirtualizingItemsControl>
             </Grid>
         </Grid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Content="Previous"
+                    Command="{Binding ViewModel.PreviousPageCommand}"
+                    Width="150"
+                    Margin="0, 0, 10, 0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    IsEnabled="{Binding ViewModel.CanGoPrevious}" />
+
+            <Button Content="Next"
+                    Command="{Binding ViewModel.NextPageCommand}"
+                    Width="150"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    IsEnabled="{Binding ViewModel.CanGoNext}" />
+        </StackPanel>
     </Grid>
 </Page>

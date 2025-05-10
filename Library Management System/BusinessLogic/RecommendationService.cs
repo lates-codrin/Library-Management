@@ -21,7 +21,7 @@ namespace Library_Management_System.BusinessLogic
         /// </summary>
         public RecommendationService()
         {
-            string apiKey = Settings.Default.OpenAIKey;
+            string apiKey = Settings.Default.OpenAIKey ?? throw new ArgumentNullException("Key not found.");
 
             if (string.IsNullOrWhiteSpace(apiKey))
             {
@@ -49,7 +49,7 @@ namespace Library_Management_System.BusinessLogic
 
             ChatCompletion result = await _api!.CompleteChatAsync(prompt);
 
-            return result.Content[0].Text?.Trim();
+            return result.Content?.FirstOrDefault()?.Text?.Trim();
         }
     }
 }

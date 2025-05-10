@@ -1,11 +1,7 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Library_Management_System.BusinessLogic;
-using Library_Management_System.Models;
+﻿using Library_Management_System.Models;
 using Microsoft.Win32;
-using System;
 using System.Collections.ObjectModel;
-using System.Linq;
+using System.IO;
 
 namespace Library_Management_System.ViewModels.Pages
 {
@@ -14,66 +10,69 @@ namespace Library_Management_System.ViewModels.Pages
         private readonly LibraryManager _libraryManager;
         private readonly LendManager _lendManager;
 
+        private int _pageNumber = 1;
+        private const int PageSize = 12;
+        private int _totalBooksCount;
+
+
         public ManageBooksViewModel(LibraryManager libraryManager, LendManager lendManager)
         {
             _libraryManager = libraryManager;
-            Books = new ObservableCollection<Book>(_libraryManager.GetBooks());
-
-            ClearForm();
             _lendManager = lendManager;
-            _lendManager.BooksStatusChanged += RefreshBooks;
+            Books = new ObservableCollection<Book>();
 
+            _lendManager.BooksStatusChanged += () => ReloadBooks();
+            _libraryManager.BooksStatusChanged += () => ReloadBooks();
+
+            PreviousPageCommand = new RelayCommand(OnPreviousPage, () => CanGoPrevious);
+            NextPageCommand = new RelayCommand(OnNextPage, () => CanGoNext);
+
+            LoadBooksAsync();
+            ClearForm();
         }
 
         public ObservableCollection<Book> Books { get; }
 
         [ObservableProperty] private Book selectedBook;
-
         [ObservableProperty] private string formTitle;
         [ObservableProperty] private string formAuthor;
         [ObservableProperty] private int formQuantity = 1;
-        [ObservableProperty] private string formStatus;
+        [ObservableProperty] private BookStatus formStatus = BookStatus.Available;
         [ObservableProperty] private DateTime formPublished = DateTime.Today;
-        [ObservableProperty] private string formImagePath;
+        [ObservableProperty] private FileInfo? formImagePath;
+        [ObservableProperty] private bool isLoading;
+
+        public ObservableCollection<BookStatus> StatusOptions { get; } = new()
+        {
+            BookStatus.Available,
+            BookStatus.Issued,
+            BookStatus.Reserved
+        };
+
+        public IRelayCommand PreviousPageCommand { get; }
+        public IRelayCommand NextPageCommand { get; }
+
+        public bool CanGoPrevious => _pageNumber > 1;
+        public bool CanGoNext => _pageNumber * PageSize < _totalBooksCount;
 
         partial void OnFormQuantityChanged(int value)
         {
-            if (value < 0)
-            {
-                FormStatus = "Reserved";
-            }
+            if (value <= 0)
+                FormStatus = BookStatus.Issued;
         }
-
-        public ObservableCollection<string> StatusOptions { get; } = new()
-        {
-            "Available", "Issued", "Reserved"
-        };
 
         [RelayCommand]
         private void Add()
         {
-            if (string.IsNullOrWhiteSpace(FormTitle) || string.IsNullOrWhiteSpace(FormAuthor))
-            {
-                FormStatus = "Title and Author are required.";
+            if (string.IsNullOrWhiteSpace(FormTitle) || string.IsNullOrWhiteSpace(FormAuthor) || FormQuantity < 0)
                 return;
-            }
 
-            if (FormQuantity < 0)
-            {
-                FormStatus = "Quantity cannot be negative.";
-                return;
-            }
-
-            bool alreadyExists = Books.Any(b =>
+            bool alreadyExists = _libraryManager.GetBooks().Any(b =>
                 b.Title.Equals(FormTitle, StringComparison.OrdinalIgnoreCase) &&
-                b.Author.Equals(FormAuthor, StringComparison.OrdinalIgnoreCase)
-            );
+                b.Author.Equals(FormAuthor, StringComparison.OrdinalIgnoreCase));
 
             if (alreadyExists)
-            {
-                FormStatus = "This book already exists!";
                 return;
-            }
 
             var book = new Book
             {
@@ -87,56 +86,31 @@ namespace Library_Management_System.ViewModels.Pages
             };
 
             _libraryManager.AddBook(book);
-            Books.Add(book);
-
+            ReloadBooks();
             ClearForm();
         }
 
         [RelayCommand]
         private void Update()
         {
-            if (SelectedBook == null)
-            {
-                FormStatus = "No book selected.";
+            if (SelectedBook == null || FormQuantity < 0)
                 return;
-            }
 
-            if (string.IsNullOrWhiteSpace(FormTitle) || string.IsNullOrWhiteSpace(FormAuthor))
-            {
-                FormStatus = "Title and Author are required.";
-                return;
-            }
-
-            if (FormQuantity < 0)
-            {
-                FormStatus = "Quantity cannot be negative.";
-                return;
-            }
-
-            // Check if another book already has this title/author
-            bool conflictExists = Books.Any(b =>
+            bool conflictExists = _libraryManager.GetBooks().Any(b =>
                 b.Id != SelectedBook.Id &&
                 b.Title.Equals(FormTitle, StringComparison.OrdinalIgnoreCase) &&
-                b.Author.Equals(FormAuthor, StringComparison.OrdinalIgnoreCase)
-            );
+                b.Author.Equals(FormAuthor, StringComparison.OrdinalIgnoreCase));
 
             if (conflictExists)
-            {
-                FormStatus = "Another book with this title/author already exists.";
                 return;
-            }
 
-            // Prevent setting quantity higher than available + lent copies
-            var currentlyLent = _lendManager.GetLendBooks()
-                .Count(l => l.BookTitle.Equals(SelectedBook.Title, StringComparison.OrdinalIgnoreCase) &&
-                           l.Author.Equals(SelectedBook.Author, StringComparison.OrdinalIgnoreCase) &&
-                           l.Status != "Returned");
+            var currentlyLent = _lendManager.GetLendBooks().Count(l =>
+                l.BookTitle.Equals(SelectedBook.Title, StringComparison.OrdinalIgnoreCase) &&
+                l.Author.Equals(SelectedBook.Author, StringComparison.OrdinalIgnoreCase) &&
+                l.Status != BookStatus.Returned);
 
             if (FormQuantity < currentlyLent)
-            {
-                FormStatus = $"Cannot set quantity below {currentlyLent} (currently lent copies).";
                 return;
-            }
 
             SelectedBook.Title = FormTitle;
             SelectedBook.Author = FormAuthor;
@@ -146,18 +120,17 @@ namespace Library_Management_System.ViewModels.Pages
             SelectedBook.ImagePath = FormImagePath;
 
             _libraryManager.UpdateBook(SelectedBook);
-            FormStatus = "Book updated successfully.";
-            RefreshBooks();
+
+            ReloadBooks();
         }
 
         [RelayCommand]
         private void Delete()
         {
-            if (SelectedBook == null)
-                return;
+            if (SelectedBook == null) return;
 
             _libraryManager.DeleteBook(SelectedBook);
-            Books.Remove(SelectedBook);
+            ReloadBooks();
             ClearForm();
         }
 
@@ -168,9 +141,9 @@ namespace Library_Management_System.ViewModels.Pages
             FormTitle = string.Empty;
             FormAuthor = string.Empty;
             FormQuantity = 1;
-            FormStatus = string.Empty;
+            FormStatus = BookStatus.Available;
             FormPublished = DateTime.Today;
-            FormImagePath = string.Empty;
+            FormImagePath = null;
         }
 
         [RelayCommand]
@@ -183,8 +156,15 @@ namespace Library_Management_System.ViewModels.Pages
 
             if (dialog.ShowDialog() == true)
             {
-                FormImagePath = dialog.FileName;
+                FormImagePath = new FileInfo(dialog.FileName);
             }
+        }
+
+        [RelayCommand]
+        private void Search(string query)
+        {
+            _pageNumber = 1;
+            LoadBooksAsync(query);
         }
 
         partial void OnSelectedBookChanged(Book value)
@@ -200,24 +180,56 @@ namespace Library_Management_System.ViewModels.Pages
             }
         }
 
-        [RelayCommand]
-        private void Search(string query)
+        private void OnPreviousPage()
         {
-            Books.Clear();
+            if (!CanGoPrevious) return;
 
-            var results = string.IsNullOrWhiteSpace(query)
-                ? _libraryManager.GetBooks()
-                : _libraryManager.SearchBooks(query);
-
-            foreach (var book in results)
-                Books.Add(book);
+            _pageNumber--;
+            LoadBooksAsync();
+            NotifyPaginationChanged();
         }
 
-        private void RefreshBooks()
+        private void OnNextPage()
         {
-            Books.Clear();
-            foreach (var book in _libraryManager.GetBooks())
-                Books.Add(book);
+            if (!CanGoNext) return;
+
+            _pageNumber++;
+            LoadBooksAsync();
+            NotifyPaginationChanged();
+        }
+
+        private void NotifyPaginationChanged()
+        {
+            PreviousPageCommand.NotifyCanExecuteChanged();
+            NextPageCommand.NotifyCanExecuteChanged();
+            OnPropertyChanged(nameof(CanGoPrevious));
+            OnPropertyChanged(nameof(CanGoNext));
+        }
+
+        private void ReloadBooks() => LoadBooksAsync();
+
+        private async void LoadBooksAsync(string? query = null)
+        {
+            if (IsLoading) return;
+            IsLoading = true;
+
+            try
+            {
+                var books = string.IsNullOrWhiteSpace(query)
+                    ? await _libraryManager.GetBooksBySearchAsync("", _pageNumber, PageSize)
+                    : await _libraryManager.GetBooksBySearchAsync(query, _pageNumber, PageSize);
+
+                _totalBooksCount = await _libraryManager.GetBooksCountBySearchAsync(query ?? "");
+
+                Books.Clear();
+                foreach (var book in books)
+                    Books.Add(book);
+            }
+            finally
+            {
+                IsLoading = false;
+                NotifyPaginationChanged();
+            }
         }
     }
 }

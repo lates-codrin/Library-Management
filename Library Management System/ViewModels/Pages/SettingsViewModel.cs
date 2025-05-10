@@ -5,61 +5,52 @@ namespace Library_Management_System.ViewModels.Pages
 {
     public partial class SettingsViewModel : ObservableObject, INavigationAware
     {
-        private bool _isInitialized = false;
-
         [ObservableProperty]
-        private string _appVersion = String.Empty;
+        private string _appVersion = string.Empty;
 
         [ObservableProperty]
         private ApplicationTheme _currentTheme = ApplicationTheme.Unknown;
 
+        private static readonly Lazy<Task> _initializationTask = new(() => Task.Run(InitializeViewModel));
+
+        private static SettingsViewModel? _currentInstance;
+
         public Task OnNavigatedToAsync()
         {
-            if (!_isInitialized)
-                InitializeViewModel();
-
-            return Task.CompletedTask;
+            _currentInstance = this;
+            return _initializationTask.Value;
         }
 
         public Task OnNavigatedFromAsync() => Task.CompletedTask;
 
-        private void InitializeViewModel()
+        private static void InitializeViewModel()
         {
-            CurrentTheme = ApplicationThemeManager.GetAppTheme();
-            AppVersion = $"UiDesktopApp1 - {GetAssemblyVersion()}";
+            if (_currentInstance is null) return;
 
-            _isInitialized = true;
+            _currentInstance.CurrentTheme = ApplicationThemeManager.GetAppTheme();
+            _currentInstance.AppVersion = $"UiDesktopApp1 - {_currentInstance.GetAssemblyVersion()}";
         }
 
         private string GetAssemblyVersion()
         {
             return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString()
-                ?? String.Empty;
+                ?? string.Empty;
         }
 
         [RelayCommand]
         private void OnChangeTheme(string parameter)
         {
-            switch (parameter)
+            ApplicationTheme selectedTheme = parameter switch
             {
-                case "theme_light":
-                    if (CurrentTheme == ApplicationTheme.Light)
-                        break;
+                "theme_light" => ApplicationTheme.Light,
+                _ => ApplicationTheme.Dark,
+            };
 
-                    ApplicationThemeManager.Apply(ApplicationTheme.Light);
-                    CurrentTheme = ApplicationTheme.Light;
+            if (CurrentTheme == selectedTheme)
+                return;
 
-                    break;
-
-                default:
-                    if (CurrentTheme == ApplicationTheme.Dark)
-                        break;
-
-                    ApplicationThemeManager.Apply(ApplicationTheme.Dark);
-                    CurrentTheme = ApplicationTheme.Dark;
-
-                    break;
-            }
+            ApplicationThemeManager.Apply(selectedTheme);
+            CurrentTheme = selectedTheme;
         }
     }
 }

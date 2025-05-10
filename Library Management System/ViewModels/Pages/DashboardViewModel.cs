@@ -1,11 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView.Extensions;
-using Library_Management_System.BusinessLogic;
+﻿using LiveChartsCore.SkiaSharpView.Extensions;
 using Library_Management_System.Models;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Library_Management_System.ViewModels.Pages
 {
@@ -14,10 +8,22 @@ namespace Library_Management_System.ViewModels.Pages
         private readonly LendManager _lendManager;
         private readonly LibraryManager _bookManager;
 
+        private List<Book> _cachedBooks;
+
         public DashboardViewModel(LendManager lendManager, LibraryManager bookManager)
         {
             _lendManager = lendManager;
             _bookManager = bookManager;
+
+            //_bookManager.BooksStatusChanged += OnBookAdded;
+            _bookManager.BooksStatusChanged += () => OnBookAdded();
+            _lendManager.BooksStatusChanged += () => OnBookAdded();
+            LoadData();
+        }
+
+        private void OnBookAdded()
+        {
+            _cachedBooks = _bookManager.GetBooks().ToList();
             LoadData();
         }
 
@@ -41,59 +47,46 @@ namespace Library_Management_System.ViewModels.Pages
         /// </summary>
         public void LoadData()
         {
+            if (_cachedBooks == null || !_cachedBooks.Any())
+            {
+                _cachedBooks = _bookManager.GetBooks().ToList();
+            }
+
             var lendings = _lendManager.GetLendBooks();
-            var inventory = _bookManager.GetBooks();
+            var inventory = _cachedBooks;
 
-            // load some empty stuff
-
-            if (lendings == null)
-                lendings = new List<LendBook>();
-
-            if (inventory == null)
-                inventory = new List<Book>();
-
-
-            BooksLentCount = lendings.Count(b => b.Status == "Issued");
-            BooksReturnedCount = lendings.Count(b => b.Status == "Returned");
+            BooksLentCount = lendings.Count(b => b.Status == BookStatus.Issued);
+            BooksReturnedCount = lendings.Count(b => b.Status == BookStatus.Returned);
 
             int totalInInventory = inventory.Sum(b => b.Quantity);
             int currentlyLent = BooksLentCount;
 
-            // no negative numbers
             BooksInStorageCount = Math.Max(0, totalInInventory);
 
             int total = BooksLentCount + BooksReturnedCount + BooksInStorageCount;
+
             int safeDiv(int val) => total == 0 ? 0 : (int)((val / (double)total) * 100 + 0.5);
 
-            LentGauge = GaugeGenerator.BuildSolidGauge(
-                new GaugeItem(
-                    safeDiv(BooksLentCount),
-                    series =>
-                    {
-                        series.MaxRadialColumnWidth = 40;
-                        series.DataLabelsSize = 32;
-                        series.Name = "Lent";
-                    }));
-
-            ReturnedGauge = GaugeGenerator.BuildSolidGauge(
-                new GaugeItem(
-                    safeDiv(BooksReturnedCount),
-                    series =>
-                    {
-                        series.MaxRadialColumnWidth = 40;
-                        series.DataLabelsSize = 32;
-                        series.Name = "Returned";
-                    }));
-
-            InStorageGauge = GaugeGenerator.BuildSolidGauge(
-                new GaugeItem(
-                    safeDiv(BooksInStorageCount),
-                    series =>
-                    {
-                        series.MaxRadialColumnWidth = 40;
-                        series.DataLabelsSize = 32;
-                        series.Name = "In Storage";
-                    }));
+            LentGauge = BuildGauge(safeDiv(BooksLentCount), "Lent");
+            ReturnedGauge = BuildGauge(safeDiv(BooksReturnedCount), "Returned");
+            InStorageGauge = BuildGauge(safeDiv(BooksInStorageCount), "In Storage");
         }
+
+        /// <summary>
+        /// Builds a radial gauge with the specified value and name.
+        /// </summary>
+        private IEnumerable<ISeries> BuildGauge(int value, string name)
+        {
+            var gauge = GaugeGenerator.BuildSolidGauge(
+                new GaugeItem(value, series =>
+                {
+                    series.MaxRadialColumnWidth = 40;
+                    series.DataLabelsSize = 32;
+                    series.Name = name;
+                }));
+            return gauge.Cast<ISeries>();
+        }
+
+
     }
 }

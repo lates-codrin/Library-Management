@@ -7,14 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     Title="ManageBooksPage"
-    d:DataContext="{d:DesignInstance local:ManageBooksPage,
-                                     IsDesignTimeCreatable=False}"
+    d:DataContext="{d:DesignInstance local:ManageBooksPage, IsDesignTimeCreatable=False}"
     d:DesignHeight="450"
     d:DesignWidth="800"
     ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:FileInfoToImagePathConverter x:Key="FileInfoToImagePathConverter"/>
+    </Page.Resources>
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -24,7 +27,7 @@
 
         <StackPanel Margin="10" VerticalAlignment="Top">
             <Border Height="120" Width="100" Background="#DDD" BorderBrush="Gray" BorderThickness="1">
-                <Image Source="{Binding ViewModel.FormImagePath}" Stretch="UniformToFill" />
+                <Image Source="{Binding ViewModel.FormImagePath, Converter={StaticResource FileInfoToImagePathConverter}}" Stretch="UniformToFill" />
             </Border>
             <Button Content="Import" Command="{Binding ViewModel.ImportImageCommand}" Width="100" HorizontalAlignment="Center" />
 
@@ -53,23 +56,31 @@
             </StackPanel>
         </StackPanel>
 
-        <DataGrid Grid.Column="1"
-                  ItemsSource="{Binding ViewModel.Books}"
-                  SelectedItem="{Binding ViewModel.SelectedBook}"
-                  AutoGenerateColumns="False"
-                  Margin="10"
-                  CanUserAddRows="False"
-                  IsReadOnly="True">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="40" />
-                <DataGridTextColumn Header="Book Title" Binding="{Binding Title}" Width="*" />
-                <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*" />
-                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" />
+        <StackPanel Grid.Column="1" Margin="10">
+            <DataGrid
+                ItemsSource="{Binding ViewModel.Books}"
+                SelectedItem="{Binding ViewModel.SelectedBook}"
+                AutoGenerateColumns="False"
+                ScrollViewer.CanContentScroll="False"
+                ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                CanUserAddRows="False"
+                IsReadOnly="True"
+                Height="460">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="40" />
+                    <DataGridTextColumn Header="Book Title" Binding="{Binding Title}" Width="*" />
+                    <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*" />
+                    <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" />
+                    <DataGridTextColumn Header="Published" Binding="{Binding Published}" Width="*" />
+                    <DataGridTextColumn Header="Image" Binding="{Binding ImagePath}" Width="*" />
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
 
-                <DataGridTextColumn Header="Published" Binding="{Binding Published}" Width="*" />
-                <DataGridTextColumn Header="Image" Binding="{Binding ImagePath}" Width="*" />
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*" />
-            </DataGrid.Columns>
-        </DataGrid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,20,10,0">
+                <Button Content="Previous" Command="{Binding ViewModel.PreviousPageCommand}" IsEnabled="{Binding ViewModel.CanGoPrevious}" Margin="5"/>
+                <Button Content="Next" Command="{Binding ViewModel.NextPageCommand}" IsEnabled="{Binding ViewModel.CanGoNext}" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

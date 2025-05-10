@@ -1,7 +1,4 @@
-﻿using System.Configuration;
-using Library_Management_System.Properties;
-
-namespace Library_Management_System.Services
+﻿namespace Library_Management_System.Services
 {
     public static class SettingsManager
     {

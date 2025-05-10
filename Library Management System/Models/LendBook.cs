@@ -1,7 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-
-namespace Library_Management_System.Models
+﻿namespace Library_Management_System.Models
 {
     public partial class LendBook : ObservableObject
     {
@@ -30,9 +27,11 @@ namespace Library_Management_System.Models
         private DateTime dateReturn;
 
         [ObservableProperty]
-        private string status;
+        private BookStatus status;
 
         [ObservableProperty]
         private string recommendation;
+
+        public Guid BookId { get; internal set; }
     }
 }

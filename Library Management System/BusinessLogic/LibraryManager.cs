@@ -12,6 +12,7 @@ namespace Library_Management_System.BusinessLogic
 {
     public class LibraryManager
     {
+        public event Action? BooksStatusChanged;
         private readonly IBookRepository _bookRepo;
 
         /// <summary>
@@ -20,7 +21,7 @@ namespace Library_Management_System.BusinessLogic
         /// <param name="bookRepo">The book repository to operate on.</param>
         public LibraryManager(IBookRepository bookRepo)
         {
-            _bookRepo = bookRepo;
+            _bookRepo = bookRepo ?? throw new ArgumentNullException(nameof(bookRepo));
         }
 
         /// <summary>
@@ -31,17 +32,30 @@ namespace Library_Management_System.BusinessLogic
         /// <summary>
         /// Adds a new book to the repository.
         /// </summary>
-        public void AddBook(Book book) => _bookRepo.Add(book);
+        
+        public void AddBook(Book book)
+        {
+            _bookRepo.Add(book);
+            BooksStatusChanged?.Invoke();
+        }
+
 
         /// <summary>
         /// Updates an existing book in the repository.
         /// </summary>
-        public void UpdateBook(Book book) => _bookRepo.Update(book);
+        public void UpdateBook(Book book) { 
+            _bookRepo.Update(book);
+            BooksStatusChanged?.Invoke();
+        }
 
         /// <summary>
         /// Deletes a book from the repository.
         /// </summary>
-        public void DeleteBook(Book book) => _bookRepo.Delete(book);
+        public void DeleteBook(Book book)
+        {
+            _bookRepo.Delete(book);
+            BooksStatusChanged?.Invoke();
+        }
 
         /// <summary>
         /// Searches books by title or author.
@@ -60,15 +74,31 @@ namespace Library_Management_System.BusinessLogic
         public async Task<IEnumerable<Book>> GetBooksBySearchAsync(string searchQuery, int pageNumber, int pageSize)
         {
             var books = _bookRepo.GetAllBooks();
-            if (!string.IsNullOrEmpty(searchQuery))
+
+            if (!string.IsNullOrWhiteSpace(searchQuery))
             {
+                var normalizedQuery = searchQuery.Trim().ToLowerInvariant();
+
                 books = books.Where(b =>
-                    b.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
-                    b.Author.Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
+                    (!string.IsNullOrWhiteSpace(b.Title) && b.Title.ToLowerInvariant().Contains(normalizedQuery)) ||
+                    (!string.IsNullOrWhiteSpace(b.Author) && b.Author.ToLowerInvariant().Contains(normalizedQuery)) ||
+                    b.Quantity.ToString().Contains(normalizedQuery) ||
+                    b.Published.ToString("yyyy-MM-dd").Contains(normalizedQuery) ||
+                    b.Status.ToString().ToLowerInvariant().Contains(normalizedQuery) ||
+                    (b.ImagePath != null && b.ImagePath.Name.ToLowerInvariant().Contains(normalizedQuery))
+                );
             }
 
-            return books.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+            return await Task.FromResult(
+                books
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList()
+            );
         }
+
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -98,7 +128,7 @@ namespace Library_Management_System.BusinessLogic
         {
             if (lendBook == null) return false;
 
-            return lendBook.Status == "Issued";
+            return lendBook.Status == BookStatus.Issued;
         }
 
         /// <summary>
@@ -110,6 +140,33 @@ namespace Library_Management_System.BusinessLogic
 
             var inventoryBook = _bookRepo.GetAll().FirstOrDefault(b => b.Id == book.Id);
             return inventoryBook?.Quantity ?? 0;
+        }
+
+        public async Task<int> GetBooksCountBySearchAsync(string searchQuery)
+        {
+            var books = _bookRepo.GetAllBooks();
+
+            if (!string.IsNullOrWhiteSpace(searchQuery))
+            {
+                var normalizedQuery = searchQuery.Trim().ToLowerInvariant();
+
+                books = books.Where(b =>
+                    (!string.IsNullOrWhiteSpace(b.Title) && b.Title.ToLowerInvariant().Contains(normalizedQuery)) ||
+                    (!string.IsNullOrWhiteSpace(b.Author) && b.Author.ToLowerInvariant().Contains(normalizedQuery)) ||
+                    b.Quantity.ToString().Contains(normalizedQuery) ||
+                    b.Published.ToString("yyyy-MM-dd").Contains(normalizedQuery) ||
+                    b.Status.ToString().ToLowerInvariant().Contains(normalizedQuery) ||
+                    (b.ImagePath != null && b.ImagePath.Name.ToLowerInvariant().Contains(normalizedQuery))
+                );
+            }
+
+            return await Task.FromResult(books.Count());
+        }
+
+
+        internal void NotifyBooksStatusChanged()
+        {
+            BooksStatusChanged?.Invoke();
         }
     }
 }

@@ -1,13 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Library_Management_System.BusinessLogic;
-using Library_Management_System.Models;
-using Microsoft.Win32;
-using System;
+﻿using Library_Management_System.Models;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Xml.Linq;
-using Wpf.Ui.Controls;
 
 namespace Library_Management_System.ViewModels.Pages
 {
@@ -27,7 +19,6 @@ namespace Library_Management_System.ViewModels.Pages
         public ObservableCollection<LendBook> LendBooks { get; }
 
         [ObservableProperty] private LendBook selectedLendBook;
-
         [ObservableProperty] private string name;
         [ObservableProperty] private string contact;
         [ObservableProperty] private string email;
@@ -35,24 +26,42 @@ namespace Library_Management_System.ViewModels.Pages
         [ObservableProperty] private string author;
         [ObservableProperty] private DateTime dateIssue = DateTime.Today;
         [ObservableProperty] private DateTime dateReturn = DateTime.Today.AddDays(7);
-        [ObservableProperty] private string status;
+        [ObservableProperty] private BookStatus status = BookStatus.Issued;
+        [ObservableProperty] private string formMessage;
 
-        [ObservableProperty]
-        private string formMessage;
-
-        public ObservableCollection<string> StatusOptions { get; } = new()
+        public ObservableCollection<BookStatus> StatusOptions { get; } = new()
         {
-            "Issued", "Returned"
+            BookStatus.Issued, BookStatus.Returned
         };
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+                return false;
+
+            var pattern = @"^\+?[\d\s\-\(\)]{7,}$";
+            return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, pattern);
+        }
+
 
         [RelayCommand]
         private void Add()
         {
-            // Validate required fields (hope I didn't miss anything..)
-            if (string.IsNullOrWhiteSpace(Name) ||
-                string.IsNullOrWhiteSpace(Contact) ||
-                string.IsNullOrWhiteSpace(BookTitle) ||
-                string.IsNullOrWhiteSpace(Author))
+            if (string.IsNullOrWhiteSpace(Name) || string.IsNullOrWhiteSpace(Contact) ||
+                string.IsNullOrWhiteSpace(BookTitle) || string.IsNullOrWhiteSpace(Author))
             {
                 FormMessage = "Please fill all required fields.";
                 return;
@@ -64,15 +73,28 @@ namespace Library_Management_System.ViewModels.Pages
 
             if (inventoryBook == null)
             {
-                FormMessage = "Book not found in nventory.";
+                FormMessage = "Book not found in inventory.";
+                return;
+            }
+
+            if (!IsValidEmail(Email))
+            {
+                FormMessage = "Email is not valid.";
+                return;
+            }
+
+            if (!IsValidPhoneNumber(Contact))
+            {
+                FormMessage = "Contact is not valid.";
                 return;
             }
 
             var existingLend = _lendManager.GetLendBooks()
                 .FirstOrDefault(l => l.BookTitle.Equals(BookTitle, StringComparison.OrdinalIgnoreCase)
-                         && l.Author.Equals(Author, StringComparison.OrdinalIgnoreCase)
-                         && l.Email.Equals(Email, StringComparison.OrdinalIgnoreCase)
-                         && l.Status != "Returned");
+                                  && l.Author.Equals(Author, StringComparison.OrdinalIgnoreCase)
+                                  && l.Email.Equals(Email, StringComparison.OrdinalIgnoreCase)
+                                  && l.Status != BookStatus.Returned);
+
 
             if (existingLend != null)
             {
@@ -83,6 +105,9 @@ namespace Library_Management_System.ViewModels.Pages
             if (inventoryBook.Quantity <= 0)
             {
                 FormMessage = "This book is currently out of stock.";
+                inventoryBook.Status = BookStatus.Issued;
+                _libraryManager.UpdateBook(inventoryBook);
+
                 return;
             }
 
@@ -102,7 +127,7 @@ namespace Library_Management_System.ViewModels.Pages
                 Author = Author,
                 DateIssue = DateIssue,
                 DateReturn = DateReturn,
-                Status = Status
+                Status = BookStatus.Issued
             };
 
             inventoryBook.Quantity--;
@@ -111,33 +136,28 @@ namespace Library_Management_System.ViewModels.Pages
             _lendManager.AddLendBook(lend);
             LendBooks.Add(lend);
             FormMessage = "Book successfully issued.";
-
+            _libraryManager.NotifyBooksStatusChanged();
             ClearForm();
         }
 
         [RelayCommand]
         private void Update()
         {
-            if (SelectedLendBook == null)
+            if (!IsValidEmail(Email))
             {
+                FormMessage = "Email is not valid.";
                 return;
             }
 
-            //warning..quantity will increase as many times as returned is clicked - LATES CODRIN-GABRIEL 06.05.2025 9:17 PM
-            //if (Status == "Returned")
-            //{
-            //    var book = _libraryManager.GetBooks()
-            //        .FirstOrDefault(b => b.Title == BookTitle && b.Author == Author);
+            if (!IsValidPhoneNumber(Contact))
+            {
+                FormMessage = "Contact is not valid.";
+                return;
+            }
 
-            //    if (book != null)
-            //    {
-            //        book.Quantity++;
-            //        _libraryManager.UpdateBook(book);
-            //    }
-            //}
+            if (SelectedLendBook == null) return;
 
-            // Prevent multiple returns from increasing quantity
-            if (Status == "Returned" && SelectedLendBook.Status != "Returned")
+            if (Status == BookStatus.Returned && SelectedLendBook.Status != BookStatus.Returned)
             {
                 var book = _libraryManager.GetBooks()
                     .FirstOrDefault(b => b.Title == BookTitle && b.Author == Author);
@@ -148,12 +168,12 @@ namespace Library_Management_System.ViewModels.Pages
                     _libraryManager.UpdateBook(book);
                 }
             }
-            // Prevent un returning if book is already returned
-            else if (Status != "Returned" && SelectedLendBook.Status == "Returned")
+            else if (Status == BookStatus.Issued && SelectedLendBook.Status == BookStatus.Returned)
             {
                 FormMessage = "Cannot change status from Returned to Issued.";
                 return;
             }
+
 
             SelectedLendBook.Name = Name;
             SelectedLendBook.Contact = Contact;
@@ -163,21 +183,33 @@ namespace Library_Management_System.ViewModels.Pages
             SelectedLendBook.DateIssue = DateIssue;
             SelectedLendBook.DateReturn = DateReturn;
             SelectedLendBook.Status = Status;
-
+            
             _lendManager.UpdateLendBook(SelectedLendBook);
             FormMessage = "Lending record updated successfully.";
             Refresh();
+            _libraryManager.NotifyBooksStatusChanged();
         }
 
         [RelayCommand]
         private void Delete()
         {
             if (SelectedLendBook == null) return;
+            if (SelectedLendBook.Status != BookStatus.Returned) return;
+            var book = _libraryManager.GetBooks()
+                .FirstOrDefault(b => b.Title.Equals(SelectedLendBook.BookTitle, StringComparison.OrdinalIgnoreCase)
+                                  && b.Author.Equals(SelectedLendBook.Author, StringComparison.OrdinalIgnoreCase));
+
+           
 
             _lendManager.DeleteLendBook(SelectedLendBook);
             LendBooks.Remove(SelectedLendBook);
+
+            _libraryManager.NotifyBooksStatusChanged();
+
             ClearForm();
         }
+
+
 
         [RelayCommand]
         private void ClearForm()
@@ -190,8 +222,9 @@ namespace Library_Management_System.ViewModels.Pages
             Author = string.Empty;
             DateIssue = DateTime.Today;
             DateReturn = DateTime.Today.AddDays(7);
-            Status = string.Empty;
+            Status = BookStatus.Issued;
         }
+
 
         partial void OnSelectedLendBookChanged(LendBook value)
         {
@@ -204,9 +237,10 @@ namespace Library_Management_System.ViewModels.Pages
                 Author = value.Author;
                 DateIssue = value.DateIssue;
                 DateReturn = value.DateReturn;
-                Status = value.Status;
+                Status = value.Status; 
             }
         }
+
 
         private void Refresh()
         {

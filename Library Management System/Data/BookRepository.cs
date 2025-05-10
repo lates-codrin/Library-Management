@@ -1,12 +1,32 @@
 ﻿using Library_Management_System.Models;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Library_Management_System.Data
 {
+    // fileinfo converter
+    public class FileInfoJsonConverter : JsonConverter<FileInfo?>
+    {
+        public override FileInfo? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        {
+            var filePath = reader.GetString();
+            return string.IsNullOrEmpty(filePath) ? null : new FileInfo(filePath);
+        }
+
+        public override void Write(Utf8JsonWriter writer, FileInfo? value, JsonSerializerOptions options)
+        {
+            if (value?.FullName != null)
+            {
+                writer.WriteStringValue(value.FullName);
+            }
+            else
+            {
+                writer.WriteNullValue();
+            }
+        }
+    }
+
     public class BookRepository : IBookRepository
     {
         private readonly string _filePath;
@@ -50,7 +70,12 @@ namespace Library_Management_System.Data
             try
             {
                 var json = File.ReadAllText(_filePath);
-                return JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>();
+                var options = new JsonSerializerOptions
+                {
+                    Converters = { new FileInfoJsonConverter() }
+                };
+
+                return JsonSerializer.Deserialize<List<Book>>(json, options) ?? new List<Book>();
             }
             catch
             {
@@ -60,7 +85,12 @@ namespace Library_Management_System.Data
 
         private void SaveBooks()
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters = { new FileInfoJsonConverter() }
+            };
+
             var json = JsonSerializer.Serialize(_books, options);
             File.WriteAllText(_filePath, json);
         }

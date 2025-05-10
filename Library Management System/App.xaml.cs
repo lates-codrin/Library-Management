@@ -62,8 +62,6 @@ namespace Library_Management_System
                 services.AddSingleton<ConnectBotViewModel>();
                 services.AddSingleton<OpenAIKeysPage>();
                 services.AddSingleton<OpenAIKeysViewModel>();
-                services.AddSingleton<DataPage>();
-                services.AddSingleton<DataViewModel>();
                 services.AddSingleton<SettingsPage>();
                 services.AddSingleton<SettingsViewModel>();
             }).Build();

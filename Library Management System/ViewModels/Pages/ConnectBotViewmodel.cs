@@ -1,9 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Library_Management_System.BusinessLogic;
-using System.Threading.Tasks;
-
-namespace Library_Management_System.ViewModels.Pages
+﻿namespace Library_Management_System.ViewModels.Pages
 {
     public partial class ConnectBotViewModel : ObservableObject
     {
@@ -34,31 +29,43 @@ namespace Library_Management_System.ViewModels.Pages
         /// Validates inputs and updates the user side of things with status/errors.
         /// </summary>
         /// 
+        [ObservableProperty]
+        private bool isBusy;
+
         [RelayCommand]
         private async Task GetRecommendationAsync()
         {
-            if (string.IsNullOrWhiteSpace(BookTitle) || string.IsNullOrWhiteSpace(Synopsis))
-            {
-                FormMessage = "Please enter both title and synopsis!";
-                return;
-            }
+            if (isBusy) return;
+            isBusy = true;
 
-            FormMessage = "Getting recommendations...";
-            if (_recommendationService.IsApiKeyMissing)
+            try
             {
-                FormMessage = "Oops! You have not set an API key in Integrations > Manage OpenAI Keys.";
-            }
-            else
-            {
-                try
+                if (string.IsNullOrWhiteSpace(BookTitle) || string.IsNullOrWhiteSpace(Synopsis))
                 {
-                    RecommendationResult = await _recommendationService.GetRecommendationsAsync(BookTitle, Genre, Synopsis);
+                    FormMessage = "Please enter both title and synopsis!";
+                    return;
+                }
+
+                FormMessage = "Getting recommendations...";
+
+                if (_recommendationService.IsApiKeyMissing)
+                {
+                    FormMessage = "Oops! You have not set an API key in Integrations > Manage OpenAI Keys.";
+                }
+                else
+                {
+                    RecommendationResult = await _recommendationService.GetRecommendationsAsync(BookTitle, Genre, Synopsis)
+                                              ?? "No recommendations found.";
                     FormMessage = "Done.";
                 }
-                catch (Exception exx)
-                {
-                    FormMessage = $"Oops!. Failed retrieving with the following message: {exx}";
-                }
+            }
+            catch (Exception ex)
+            {
+                FormMessage = $"Oops! Failed to retrieve recommendations. {ex.Message}";
+            }
+            finally
+            {
+                isBusy = false;
             }
         }
     }

@@ -56,12 +56,6 @@ namespace Library_Management_System.ViewModels.Windows
                         TargetPageType = typeof(Views.Pages.OpenAIKeysPage)
                     }
                 }
-            },
-            new NavigationViewItem()
-            {
-                Content = "Data",
-                Icon = new SymbolIcon { Symbol = SymbolRegular.DataHistogram24 },
-                TargetPageType = typeof(Views.Pages.DataPage)
             }
         };
 
