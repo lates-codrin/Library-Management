@@ -9,11 +9,11 @@
 
 # 📚 Library Management System (.NET)
 <p align="center">
-  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-alpha/Setup.pdf">
+  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-beta/Setup.pdf">
     <img src="https://img.shields.io/badge/📄%20Download-Documentation%20PDF-green?style=for-the-badge" alt="Download Documentation PDF"/>
   </a>
-  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-alpha/x64.zip">
-    <img src="https://img.shields.io/badge/📦%20Download-Pre--Release-orange?style=for-the-badge" alt="Download Pre-release"/>
+  <a href="https://github.com/lates-codrin/Library-Management/releases/download/v0.0.1-beta/x64.zip">
+    <img src="https://img.shields.io/badge/📦%20Download-Pre--Release-orange?style=for-the-badge" alt="Download Release"/>
   </a>
 </p>
 
