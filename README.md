@@ -27,7 +27,7 @@ A desktop-based Library Management System built in C# with a multi-layered archi
 
 ## Prerequisites
 1. Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or newer. 
-2. Install .NET SDK 8.0 or higher (or when installing Visual Studio, choose ".NET Desktop Development") <br>
+2. Install [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks) or higher (or when installing Visual Studio, choose ".NET Desktop Development") <br>
    If you don't have the SDK installed, Visual Studio will automatically prompt you to install ".NET Desktop Development". Click Install.
 3. Install [GIT CLI](https://git-scm.com/downloads) or GitHub Desktop
 
