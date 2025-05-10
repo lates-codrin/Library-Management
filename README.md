@@ -68,8 +68,18 @@ Click the green Start button or press F5.
 2. Open the .zip > folder > .exe
 3. The application should start as usual
 
+---
 
-## 🤖 HOW TO RUN SPECIAL FEATURE:
+# 🤖 Custom Feauture - AI-GPT Book Reccomender
+This unique feature allows the administrator to input:
+
+* A book title
+* Its category
+* A brief synopsis
+
+💡 The system then uses the OpenAI GPT model to suggest a relevant and potentially interesting book. This serves as a smart assistant to help users discover new reads aligned with their interests or library offerings.
+
+## 🔶 How to Run the Feature:
 **To enjoy the AI-powered book recommendation feature, you'll need an OpenAI API key. You have two simple options:**
 
 ### 🔹 **Option 1**: Use the Built-in Key (Default, Free)
@@ -124,15 +134,6 @@ docfx --serve
 </p>
 
 ---
-
-💡 **Custom Feature Description: AI Book Recommender**
-This unique feature allows the administrator to input:
-
-* A book title
-* Its category
-* A brief synopsis
-
-The system then uses the OpenAI GPT model to suggest a relevant and potentially interesting book. This serves as a smart assistant to help users discover new reads aligned with their interests or library offerings.
 
 
 
