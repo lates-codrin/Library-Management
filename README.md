@@ -84,7 +84,9 @@ This unique feature allows the administrator to input:
 
 ### 🔹 **Option 1**: Use the Built-in Key (Default, Free)
 No action required — a preloaded OpenAI key with a $5 credit limit (already covered) is integrated directly into the application. Just launch and enjoy! <br>
-Keep in mind that such variables (API keys, auth tokens) I usually store in an env file. However, I have no other way to share this token with you so it's built-in. <br>
+
+Keep in mind that such variables (API keys, auth tokens) I usually store in an env file. 
+However, I have no other way to share this token with you so it's built-in. <br>
 
 ### 🔹 **Option 2**: Use Your Own Key
 Prefer using your personal OpenAI account? Follow these steps:
